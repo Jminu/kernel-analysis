@@ -11,7 +11,7 @@ KERNEL=kernel8
 cd out
 
 make O=$OUTPUT modules_install
-cp $OUTPUT/arch/arm64/boot/dts/broadcom/*.dtb /boot/
-cp $OUTPUT/arch/arm64/boot/dts/overlays/*.dtb* /boot/overlays/
+cp $OUTPUT/arch/arm64/boot/dts/broadcom/*.dtb /boot/firmware
+cp $OUTPUT/arch/arm64/boot/dts/overlays/*.dtb* /boot/firmware/overlays/
 #cp $OUTPUT/arch/arm64/boot/dtts/overlays/README /boot/overlays/
-cp $OUTPUT/arch/arm64/boot/Image /boot/$KERNEL.img
+cp $OUTPUT/arch/arm64/boot/Image /boot/firmware/$KERNEL.img

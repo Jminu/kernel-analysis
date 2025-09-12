@@ -456,6 +456,19 @@ int __weak arch_show_interrupts(struct seq_file *p, int prec)
 	return 0;
 }
 
+noinline void rpi_get_interrupt_info(struct irqaction* action_p) {
+	unsigned irq_num = action_p->handler;
+	void* irq_handler = NULL;
+
+	if (action_p->handler) {
+		irq_handler = (void *)action_p->handler;
+	}
+
+	if (irq_handler) {
+		trace_printk("[%s] %d: %s, irq_handler : %p5 \n", current->comm, irq_num, action_p->name, irq_handler);
+	}
+}
+
 #ifndef ACTUAL_NR_IRQS
 # define ACTUAL_NR_IRQS nr_irqs
 #endif
@@ -520,6 +533,11 @@ int show_interrupts(struct seq_file *p, void *v)
 		seq_printf(p, "-%-8s", desc->name);
 
 	action = desc->action;
+
+	if (action) {
+		rpi_get_interrupt_info(action);
+	}
+
 	if (action) {
 		seq_printf(p, "  %s", action->name);
 		while ((action = action->next) != NULL)
