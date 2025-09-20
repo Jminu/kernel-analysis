@@ -33,7 +33,7 @@
  * information must be protected by sparse_irq_lock.
  */
 static struct proc_dir_entry *root_irq_dir;
-
+extern uint32_t raspbian_debug_state;
 #ifdef CONFIG_SMP
 
 enum {
@@ -533,9 +533,12 @@ int show_interrupts(struct seq_file *p, void *v)
 		seq_printf(p, "-%-8s", desc->name);
 
 	action = desc->action;
-
-	if (action) {
-		rpi_get_interrupt_info(action);
+	
+	if (7989 == raspbian_debug_state) {
+		if (action) {
+			printk("JMW TEST\n");
+			rpi_get_interrupt_info(action);
+		}
 	}
 
 	if (action) {

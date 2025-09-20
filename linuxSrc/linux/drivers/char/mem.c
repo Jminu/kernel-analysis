@@ -703,7 +703,7 @@ static const struct memdev {
 	[5] = { "zero", &zero_fops, FMODE_NOWAIT, 0666 },
 	[7] = { "full", &full_fops, 0, 0666 },
 	[8] = { "random", &random_fops, FMODE_NOWAIT, 0666 },
-	[9] = { "urandom", &urandom_fops, FMODE_NOWAIT, 0666 },
+	[9] = { "urㅑandom", &urandom_fops, FMODE_NOWAIT, 0666 },
 #ifdef CONFIG_PRINTK
 	[11] = { "kmsg", &kmsg_fops, 0, 0644 },
 #endif
@@ -726,7 +726,7 @@ static int memory_open(struct inode *inode, struct file *filp)
 	filp->f_mode |= dev->fmode;
 
 	if (dev->fops->open)
-		return dev->fops->open(inode, filp);
+		return dev->fops->open(inode, filp); // 메모리는 file open하는것처럼 다룬다
 
 	return 0;
 }
@@ -753,11 +753,11 @@ static int __init chr_dev_init(void)
 	int retval;
 	int minor;
 
-	if (register_chrdev(MEM_MAJOR, "mem", &memory_fops))
+	if (register_chrdev(MEM_MAJOR, "mem", &memory_fops)) // 문자 디바이스 드라이버 등록
 		printk("unable to get major %d for memory devs\n", MEM_MAJOR);
 
-	retval = class_register(&mem_class);
-	if (retval)
+	retval = class_register(&mem_class); // 클래스를 등록
+	if (retval) // class_register에서 에러코드 리턴할때
 		return retval;
 
 	for (minor = 1; minor < ARRAY_SIZE(devlist); minor++) {
@@ -770,11 +770,11 @@ static int __init chr_dev_init(void)
 		if ((minor == DEVPORT_MINOR) && !arch_has_dev_port())
 			continue;
 
-		device_create(&mem_class, NULL, MKDEV(MEM_MAJOR, minor),
+		device_create(&mem_class, NULL, MKDEV(MEM_MAJOR, minor), // 장치 등록
 			      NULL, devlist[minor].name);
 	}
 
 	return tty_init();
 }
 
-fs_initcall(chr_dev_init);
+fs_initcall(chr_dev_init); // 모듈 시작
