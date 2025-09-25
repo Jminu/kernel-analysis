@@ -1,0 +1,3 @@
+make[1]: Entering directory '/project/linuxSrc/out'
+make[2]: Nothing to be done for '/project/linuxSrc/linux/kernel/fork.c'.
+make[1]: Leaving directory '/project/linuxSrc/out'

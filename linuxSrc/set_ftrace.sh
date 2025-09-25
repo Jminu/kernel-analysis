@@ -24,9 +24,9 @@ echo "cpu_startup_entry enabled!"
 #sleep 1
 #echo "bcm2835_dma_callback"
 
-echo schedule ttwu_do_activate > /sys/kernel/debug/tracing/set_ftrace_filter
+echo copy_process __arm64_sys_clone> /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
-echo "schedule, ttwu_do_activate enabled!"
+echo "copy_process enabled!, __arm64_sys_clone enabled!!"
 
 echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_entry/enable
 echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_exit/enable
