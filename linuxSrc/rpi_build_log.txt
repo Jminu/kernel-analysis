@@ -1,16 +1,12 @@
 make[1]: Entering directory '/project/linuxSrc/out'
   GEN     Makefile
   CALL    /project/linuxSrc/linux/scripts/checksyscalls.sh
-  CC      kernel/irq/proc.o
-/project/linuxSrc/linux/kernel/irq/proc.c:459:36: warning: no previous prototype for ‘rpi_get_interrupt_info’ [-Wmissing-prototypes]
-  459 | noinline void rpi_get_interrupt_info(struct irqaction* action_p) {
-      |                                    ^~~~~~~~~~~~~~~~~~~~~~
-/project/linuxSrc/linux/kernel/irq/proc.c: In function ‘rpi_get_interrupt_info’:
-/project/linuxSrc/linux/kernel/irq/proc.c:460:28: warning: initialization of ‘unsigned int’ from ‘irq_handler_t’ {aka ‘enum irqreturn (*)(int,  void *)’} makes integer from pointer without a cast [-Wint-conversion]
-  460 |         unsigned irq_num = action_p->handler;
-      |                            ^~~~~~~~
-  AR      kernel/irq/built-in.a
+  CC      kernel/sched/core.o
+  CC      drivers/char/mem.o
+  AR      drivers/char/built-in.a
+  AR      kernel/sched/built-in.a
   AR      kernel/built-in.a
+  AR      drivers/built-in.a
   AR      built-in.a
   AR      vmlinux.a
   LD      vmlinux.o

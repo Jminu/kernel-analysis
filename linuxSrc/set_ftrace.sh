@@ -16,17 +16,15 @@ echo cpu_startup_entry > /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
 echo "cpu_startup_entry enabled!"
 
-#echo rpi_get_interrupt_info > /sys/kernel/debug/tracing/set_ftrace_filter
-#sleep 1
-#echo "set_ftrace_filter enabled"
+#####################################################################
 
-#echo bcm2835_dma_callback > /sys/kernel/debug/tracing/set_ftrace_filter
-#sleep 1
-#echo "bcm2835_dma_callback"
 
-echo copy_process __arm64_sys_clone> /sys/kernel/debug/tracing/set_ftrace_filter
+echo do_exit finish_task_switch.isra.0 put_task_stack > /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
 echo "copy_process enabled!, __arm64_sys_clone enabled!!"
+
+
+#####################################################################
 
 echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_entry/enable
 echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_exit/enable
