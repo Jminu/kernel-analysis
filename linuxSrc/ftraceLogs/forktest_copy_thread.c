@@ -1,0 +1,584 @@
+# tracer: function
+#
+# entries-in-buffer/entries-written: 88/88   #P:4
+#
+#                                _-----=> irqs-off/BH-disabled
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| / _-=> migrate-disable
+#                              |||| /     delay
+#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION
+#              | |         |   |||||     |         |
+ systemd-journal-238     [001] ..... 157370.880929: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157370.880938: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157373.171793: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157373.171799: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157373.580773: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157373.580780: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157374.517047: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157374.517053: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157374.846087: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157374.846093: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157375.417395: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157375.417402: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157375.923342: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157375.923351: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+            bash-142916  [000] ..... 157376.697195: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+            bash-142916  [000] ..... 157376.697200: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0x48/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157376.713629: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157376.713635: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157378.977247: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157378.977253: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157379.436521: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157379.436527: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157380.223455: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157380.223461: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157380.591103: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157380.591109: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157381.680803: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157381.680808: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+            bash-142916  [000] ..... 157382.016857: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+            bash-142916  [000] ..... 157382.016863: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0x48/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+       forktest1-146879  [001] ..... 157382.018506: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+       forktest1-146879  [001] ..... 157382.018511: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0x48/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157382.961382: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157382.961388: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157383.534156: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157383.534162: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157384.891353: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157384.891359: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [000] ..... 157386.821679: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [000] ..... 157386.821685: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [000] ..... 157387.693930: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [000] ..... 157387.693937: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [000] ..... 157388.834718: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [000] ..... 157388.834724: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157389.442860: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157389.442866: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157389.970180: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157389.970186: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+            bash-142916  [002] ..... 157390.068740: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+            bash-142916  [002] ..... 157390.068747: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0x48/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157390.601674: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157390.601680: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157391.475622: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157391.475627: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157392.101554: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157392.101560: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157392.574551: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157392.574557: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157393.057949: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157393.057955: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157393.874279: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157393.874286: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157394.341223: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157394.341229: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [003] ..... 157394.941648: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [003] ..... 157394.941654: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157395.844989: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157395.844994: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157397.361501: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157397.361509: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157398.692685: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157398.692691: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157399.501805: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157399.501812: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157400.066222: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157400.066229: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157401.613763: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157401.613769: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157402.646533: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157402.646540: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [001] ..... 157403.234492: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [001] ..... 157403.234499: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [000] ..... 157403.968053: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [000] ..... 157403.968059: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+ systemd-journal-238     [002] ..... 157404.466500: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+ systemd-journal-238     [002] ..... 157404.466507: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0xc8/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198
+            bash-142916  [000] ..... 157404.924146: copy_thread+0x4/0x1a8 <-copy_process+0xa98/0x1518
+            bash-142916  [000] ..... 157404.924152: <stack trace>
+ => copy_thread+0x8/0x1a8
+ => copy_process+0xa98/0x1518
+ => kernel_clone+0xa0/0x470
+ => __do_sys_clone+0x74/0xb0
+ => __arm64_sys_clone+0x28/0x40
+ => invoke_syscall+0x50/0x120
+ => el0_svc_common.constprop.0+0x48/0xf0
+ => do_el0_svc+0x24/0x38
+ => el0_svc+0x30/0x100
+ => el0t_64_sync_handler+0x100/0x130
+ => el0t_64_sync+0x190/0x198

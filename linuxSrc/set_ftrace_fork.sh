@@ -19,20 +19,20 @@ echo "cpu_startup_entry enabled!"
 #####################################################################
 
 
-echo kernel_clone > /sys/kernel/debug/tracing/set_ftrace_filter
+echo copy_thread > /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
-echo "kernel_clone => enabled!"
+echo "copy_thread => enabled!"
 
 
 #####################################################################
 
-echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_entry/enable
-echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_exit/enable
-echo "event enabled"
+#echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_entry/enable
+#echo 1 > /sys/kernel/debug/tracing/events/irq/irq_handler_exit/enable
+#echo "event enabled"
 
-echo 1 > /sys/kernel/debug/tracing/events/sched/sched_switch/enable
-sleep 1
-echo "sched switch enabled!"
+#echo 1 > /sys/kernel/debug/tracing/events/sched/sched_switch/enable
+#sleep 1
+#echo "sched switch enabled!"
 
 echo 1 > /sys/kernel/debug/tracing/options/func_stack_trace
 echo "function stack trace enabled"
