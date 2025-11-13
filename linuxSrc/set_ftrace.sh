@@ -19,7 +19,7 @@ echo "cpu_startup_entry enabled!"
 #####################################################################
 
 
-echo do_exit finish_task_switch.isra.0 put_task_stack > /sys/kernel/debug/tracing/set_ftrace_filter
+echo __arm64_sys_clone > /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
 echo "copy_process enabled!, __arm64_sys_clone enabled!!"
 

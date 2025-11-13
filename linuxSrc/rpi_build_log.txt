@@ -1,4 +1,2576 @@
-make[1]: Entering directory '/project/linuxSrc/out'
+make[1]: Entering directory '/project/kernel/Kernel-Analysis/linuxSrc/out'
+  SYNC    include/config/auto.conf
   GEN     Makefile
-  CALL    /project/linuxSrc/linux/scripts/checksyscalls.sh
-make[1]: Leaving directory '/project/linuxSrc/out'
+  GEN     Makefile
+  UPD     include/generated/uapi/linux/version.h
+  SYSHDR  arch/arm64/include/generated/uapi/asm/unistd_64.h
+  UPD     include/config/kernel.release
+  UPD     include/generated/utsrelease.h
+  SYSTBL  arch/arm64/include/generated/asm/syscall_table_32.h
+  SYSTBL  arch/arm64/include/generated/asm/syscall_table_64.h
+  SYSHDR  arch/arm64/include/generated/asm/unistd_32.h
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/dtc/flattree.o
+  SYSHDR  arch/arm64/include/generated/asm/unistd_compat_32.h
+  HOSTCC  scripts/dtc/fstree.o
+  HOSTCC  scripts/dtc/data.o
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+  HOSTCC  scripts/dtc/util.o
+  LEX     scripts/dtc/dtc-lexer.lex.c
+  YACC    scripts/dtc/dtc-parser.tab.[ch]
+  HOSTCC  scripts/dtc/libfdt/fdt.o
+  HOSTCC  scripts/dtc/libfdt/fdt_ro.o
+  HOSTCC  scripts/dtc/libfdt/fdt_wip.o
+  HOSTCC  scripts/dtc/libfdt/fdt_sw.o
+  HOSTCC  scripts/dtc/libfdt/fdt_rw.o
+  HOSTCC  scripts/dtc/libfdt/fdt_strerror.o
+  HOSTCC  scripts/dtc/libfdt/fdt_empty_tree.o
+  HOSTCC  scripts/dtc/libfdt/fdt_addresses.o
+  HOSTCC  scripts/dtc/libfdt/fdt_overlay.o
+  HOSTCC  scripts/dtc/fdtoverlay.o
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTLD  scripts/dtc/fdtoverlay
+  HOSTLD  scripts/dtc/dtc
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/sorttable
+  HOSTCC  scripts/genksyms/genksyms.o
+  DTC     arch/arm64/boot/dts/broadcom/bcm2711-rpi-400.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2711-rpi-4-b.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2711-rpi-cm4-io.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-rpi-5-b.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-d-rpi-5-b.dtb
+  HOSTCC  scripts/asn1_compiler
+  DTC     arch/arm64/boot/dts/broadcom/bcm2837-rpi-3-a-plus.dtb
+  YACC    scripts/genksyms/parse.tab.[ch]
+  LEX     scripts/genksyms/lex.lex.c
+  DTC     arch/arm64/boot/dts/broadcom/bcm2837-rpi-3-b.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2837-rpi-3-b-plus.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2837-rpi-cm3-io3.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2837-rpi-zero-2-w.dtb
+  HOSTCC  scripts/genksyms/parse.tab.o
+  HOSTCC  scripts/genksyms/lex.lex.o
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-zero-2.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-zero-2-w.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-2-b.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-3-b.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-3-b-plus.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-cm0.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2710-rpi-cm3.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2711-rpi-cm4.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2711-rpi-cm4s.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712d0-rpi-5-b.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-rpi-500.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-rpi-cm5-cm5io.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-rpi-cm5-cm4io.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-rpi-cm5l-cm5io.dtb
+  DTC     arch/arm64/boot/dts/broadcom/bcm2712-rpi-cm5l-cm4io.dtb
+  DTCO    arch/arm64/boot/dts/overlays/act-led.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/adafruit-st7735r.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/adafruit18.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/adau1977-adc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/adau7002-simple.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ads1015.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ads1115.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ads7846.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/adv7282m.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/adv728x-m.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/akkordion-iqdacplus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/allo-boss-dac-pcm512x-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/allo-boss2-dac-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/allo-digione.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/allo-katana-dac-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/allo-piano-dac-pcm512x-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/allo-piano-dac-plus-pcm512x-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/anyspi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/apds9960.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/applepi-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/arducam-64mp.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/arducam-pivariety.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/at86rf233.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audioinjector-addons.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audioinjector-bare-i2s.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audioinjector-isolated-soundcard.dtbo
+  HOSTLD  scripts/genksyms/genksyms
+  DTCO    arch/arm64/boot/dts/overlays/audioinjector-ultra.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audioinjector-wm8731-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audiosense-pi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audremap.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/audremap-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/balena-fin.dtbo
+  GEN     arch/arm64/include/generated/asm/cpucap-defs.h
+  DTCO    arch/arm64/boot/dts/overlays/bcm2712d0.dtbo
+  GEN     arch/arm64/include/generated/asm/sysreg-defs.h
+  DTCO    arch/arm64/boot/dts/overlays/camera-mux-2port.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/camera-mux-4port.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/cap1106.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/chipcap2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/chipdip-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/cirrus-wm5102.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/cm-swap-i2c0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/cma.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/crystalfontz-cfa050_pi_m.dtbo
+  CC      scripts/mod/empty.o
+  DTCO    arch/arm64/boot/dts/overlays/cutiepi-panel.dtbo
+  HOSTCC  scripts/mod/mk_elfconfig
+  DTCO    arch/arm64/boot/dts/overlays/dacberry400.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/dht11.dtbo
+  CC      scripts/mod/devicetable-offsets.s
+  DTCO    arch/arm64/boot/dts/overlays/dionaudio-kiwi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/dionaudio-loco.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/dionaudio-loco-v2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/disable-bt.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/disable-bt-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/disable-emmc2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/disable-wifi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/disable-wifi-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/dpi18.dtbo
+  MKELF   scripts/mod/elfconfig.h
+  DTCO    arch/arm64/boot/dts/overlays/dpi18cpadhi.dtbo
+  HOSTCC  scripts/mod/modpost.o
+  DTCO    arch/arm64/boot/dts/overlays/dpi24.dtbo
+  HOSTCC  scripts/mod/sumversion.o
+  DTCO    arch/arm64/boot/dts/overlays/draws.dtbo
+  HOSTCC  scripts/mod/symsearch.o
+  DTCO    arch/arm64/boot/dts/overlays/dwc-otg-deprecated.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/dwc2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/edt-ft5406.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/enc28j60.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/enc28j60-spi2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/exc3000.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ezsound-6x8iso.dtbo
+  HOSTCC  scripts/mod/file2alias.o
+  DTCO    arch/arm64/boot/dts/overlays/fbtft.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/fe-pi-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/fsm-demo.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gc9a01.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ghost-amp.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/goodix.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/googlevoicehat-soundcard.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-charger.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-fan.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-hog.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-ir.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-ir-tx.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-key.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-led.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-no-bank0-irq.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-no-irq.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-poweroff.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/gpio-shutdown.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hd44780-i2c-lcd.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hd44780-lcd.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hdmi-backlight-hwhack-gpio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-adc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-adc8x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-amp.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-amp100.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-amp3.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-amp4pro.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dac8x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplus-pro.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplus-std.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplusadc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplusadcpro.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplusdsp.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-dacplushd.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-digi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hifiberry-digi-pro.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/highperi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hy28a.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hy28b.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/hy28b-2017.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i-sabre-q2m.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-bcm2708.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-fan.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-gpio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-mux.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-pwm-pca9685a.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-rtc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-rtc-gpio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c-sensor.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c0-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c1.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c1-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c2-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c3.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c3-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2c6.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2s-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2s-gpio28-31.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/i2s-master-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ilitek251x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx219.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx258.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx283.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx290.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx296.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx327.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx335.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx378.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx415.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx462.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx477.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx500.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx500-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx519.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/imx708.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/interludeaudio-analog.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/interludeaudio-digital.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/iqaudio-codec.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/iqaudio-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/iqaudio-dacplus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/iqaudio-digi-wm8804-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/iqs550.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/irs1125.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/jedec-spi-nor.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/justboom-both.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/justboom-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/justboom-digi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ltc294x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/max98357a.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/maxtherm.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mbed-dac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp23017.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp23s17.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp2515.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp2515-can0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp2515-can1.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp251xfd.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp3008.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp3202.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mcp342x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/media-center.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/merus-amp.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart0-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart1.dtbo
+  HOSTLD  scripts/mod/modpost
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart1-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart2-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart3.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart3-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart4-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/midi-uart5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/minipitft13.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/miniuart-bt.dtbo
+  CC      kernel/bounds.s
+  DTCO    arch/arm64/boot/dts/overlays/mipi-dbi-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mira220.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mlx90640.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mmc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/mz61581.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ov2311.dtbo
+  CHKSHA1 /project/kernel/Kernel-Analysis/linuxSrc/linux/include/linux/atomic/atomic-arch-fallback.h
+  DTCO    arch/arm64/boot/dts/overlays/ov5647.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ov64a40.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ov7251.dtbo
+  CHKSHA1 /project/kernel/Kernel-Analysis/linuxSrc/linux/include/linux/atomic/atomic-instrumented.h
+  CHKSHA1 /project/kernel/Kernel-Analysis/linuxSrc/linux/include/linux/atomic/atomic-long.h
+  DTCO    arch/arm64/boot/dts/overlays/ov9281.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/papirus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pca953x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pcf857x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pcie-32bit-dma.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pcie-32bit-dma-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pciex1-compat-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pibell.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pifacedigital.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pifi-40.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pifi-dac-hd.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pifi-dac-zero.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pifi-mini-210.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/piglow.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pimidi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pineboards-hat-ai.dtbo
+  CC      arch/arm64/kernel/asm-offsets.s
+  DTCO    arch/arm64/boot/dts/overlays/pineboards-hatdrive-poe-plus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/piscreen.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/piscreen2r.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pisound.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pisound-micro.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pisound-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pitft22.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pitft28-capacitive.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pitft28-resistive.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pitft35-resistive.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pivision.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pps-gpio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/proto-codec.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm-2chan.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm-gpio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm-gpio-fan.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm-ir-tx.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm-pio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/pwm1.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/qca7000.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/qca7000-uart0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ramoops.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ramoops-pi4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rootmaster.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rotary-encoder.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-backlight.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-codeczero.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-dacplus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-dacpro.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-digiampplus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-ft5406.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-fw-uart.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-poe.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-poe-plus.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-power-hat-b.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-power-hat-t.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-sense.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-sense-v2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rpi-tv.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/rra-digidac1-wm8741-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sainsmart18.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sc16is750-i2c.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sc16is752-i2c.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sc16is75x-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sdhost.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sdio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sdio-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/seeed-can-fd-hat-v1.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/seeed-can-fd-hat-v2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sh1106-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/si446x-spi0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/smi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/smi-dev.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/smi-nand.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi-gpio35-39.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi-gpio40-45.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi-rtc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi0-0cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi0-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi0-1cs-inverted.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi0-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi1-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi1-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi1-3cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi2-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi2-1cs-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi2-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi2-2cs-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi2-3cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi3-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi3-1cs-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi3-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi3-2cs-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi4-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi4-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi5-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi5-1cs-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi5-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi5-2cs-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi6-1cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/spi6-2cs.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ssd1306.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ssd1306-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ssd1327-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ssd1331-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ssd1351-spi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sunfounder-pipower3.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sunfounder-pironman5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/superaudioboard.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/sx150x.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/tc358743.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/tc358743-audio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/tc358743-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/tinylcd35.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/tpm-slb9670.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/tpm-slb9673.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart0.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart0-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart1.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart1-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart2-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart3.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart3-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart4-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/uart5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/udrc.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ugreen-dabboard.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/upstream.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/upstream-pi4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-fkms-v3d.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-fkms-v3d-pi4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dpi-generic.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dpi-hyperpixel2r.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dpi-hyperpixel4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dpi-hyperpixel4sq.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dpi-panel.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-7inch.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-generic.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-ili9881-5inch.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-ili9881-7inch.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-lt070me05000.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-lt070me05000-v2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-waveshare-800x480.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-waveshare-panel.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-dsi-waveshare-panel-v2.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-kippah-7inch.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-v3d.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-v3d-pi4.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-v3d-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vc4-kms-vga666.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vga666.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/vl805.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/w1-gpio.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/w1-gpio-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/w1-gpio-pullup.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/w1-gpio-pullup-pi5.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/w5500.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/watterott-display.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/waveshare-can-fd-hat-mode-a.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/waveshare-can-fd-hat-mode-b.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/wifimac.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/wittypi.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/wm8960-soundcard.dtbo
+  DTCO    arch/arm64/boot/dts/overlays/ws2812-pio.dtbo
+  DTC     arch/arm64/boot/dts/overlays/overlay_map.dtb
+  DTC     arch/arm64/boot/dts/overlays/hat_map.dtb
+  CALL    /project/kernel/Kernel-Analysis/linuxSrc/linux/scripts/checksyscalls.sh
+  LDS     arch/arm64/kernel/vdso/vdso.lds
+  CC      arch/arm64/kernel/vdso/vgettimeofday.o
+  AS      arch/arm64/kernel/vdso/note.o
+  AS      arch/arm64/kernel/vdso/sigreturn.o
+  CC      arch/arm64/kernel/vdso/vgetrandom.o
+  AS      arch/arm64/kernel/vdso/vgetrandom-chacha.o
+  LD      arch/arm64/kernel/vdso/vdso.so.dbg
+  VDSOSYM include/generated/vdso-offsets.h
+  OBJCOPY arch/arm64/kernel/vdso/vdso.so
+  LDS     scripts/module.lds
+  HOSTCC  usr/gen_init_cpio
+  CC      init/main.o
+  LDS     arch/arm64/kernel/vmlinux.lds
+  CC      arch/arm64/kernel/debug-monitors.o
+  GEN     usr/initramfs_data.cpio
+  COPY    usr/initramfs_inc_data
+  AS      usr/initramfs_data.o
+  CC      kernel/fork.o
+  AR      usr/built-in.a
+  AS      arch/arm64/kernel/entry.o
+  CC      arch/arm64/mm/dma-mapping.o
+  CC      arch/arm64/kernel/irq.o
+  CC      arch/arm64/mm/extable.o
+  CC      arch/arm64/mm/fault.o
+  CC      init/do_mounts.o
+  CC      arch/arm64/kernel/fpsimd.o
+  CC      arch/arm64/mm/init.o
+  CC      kernel/exec_domain.o
+  CC      init/do_mounts_rd.o
+  CC      arch/arm64/kernel/entry-common.o
+  CC      kernel/panic.o
+  CC      init/do_mounts_initrd.o
+  AS      arch/arm64/mm/cache.o
+  CC      arch/arm64/mm/copypage.o
+  AS      arch/arm64/kernel/entry-fpsimd.o
+  CC      arch/arm64/kernel/process.o
+  CC      init/initramfs.o
+  CC      arch/arm64/mm/flush.o
+  CC      kernel/cpu.o
+  CC      arch/arm64/mm/ioremap.o
+  CC      arch/arm64/kernel/ptrace.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+  CC      arch/arm64/mm/mmap.o
+  CC      kernel/exit.o
+  CC      init/version.o
+  CC      arch/arm64/mm/pgd.o
+  CC      arch/arm64/kernel/setup.o
+  AR      init/built-in.a
+  CC      arch/arm64/net/bpf_jit_comp.o
+  CC      arch/arm64/mm/mem_encrypt.o
+  CC      arch/arm64/kernel/signal.o
+  CC      arch/arm64/mm/mmu.o
+  CC      kernel/softirq.o
+  CC      arch/arm64/kernel/sys.o
+  AR      arch/arm64/net/built-in.a
+  CC      kernel/resource.o
+  CC      arch/arm64/mm/context.o
+  CC      arch/arm64/kernel/stacktrace.o
+  CC      certs/system_keyring.o
+  HOSTCC  certs/extract-cert
+  AS      arch/arm64/mm/proc.o
+  CC      arch/arm64/kernel/time.o
+  CC      arch/arm64/mm/pageattr.o
+  CERT    certs/x509_certificate_list
+  CERT    certs/signing_key.x509
+  AS      certs/system_certificates.o
+  CC      kernel/sysctl.o
+  AR      certs/built-in.a
+  CC      arch/arm64/mm/fixmap.o
+  CC      arch/arm64/kernel/traps.o
+  CC      kernel/capability.o
+  CC      arch/arm64/mm/mteswap.o
+  AR      arch/arm64/mm/built-in.a
+  CC      kernel/ptrace.o
+  CC      arch/arm64/kernel/io.o
+  CC      kernel/user.o
+  CC      kernel/signal.o
+  CC      arch/arm64/kernel/vdso.o
+  CC      kernel/sys.o
+  AS      arch/arm64/kernel/hyp-stub.o
+  CC      arch/arm64/kernel/psci.o
+  CC      mm/filemap.o
+  CC      arch/arm64/kernel/cpu_ops.o
+  CC      arch/arm64/kernel/return_address.o
+  CC      arch/arm64/kernel/cpuinfo.o
+  CC      kernel/umh.o
+  CC      fs/open.o
+  CC      arch/arm64/kernel/cpu_errata.o
+  CC      kernel/workqueue.o
+  CC      arch/arm64/kernel/cpufeature.o
+  CC      mm/mempool.o
+  CC      fs/read_write.o
+  CC      mm/oom_kill.o
+  CC      arch/arm64/kernel/alternative.o
+  CC      fs/file_table.o
+  CC      arch/arm64/kernel/cacheinfo.o
+  CC      kernel/pid.o
+  CC      mm/fadvise.o
+  CC      arch/arm64/kernel/smp.o
+  CC      fs/super.o
+  CC      mm/maccess.o
+  CC      kernel/task_work.o
+  CC      arch/arm64/kernel/smp_spin_table.o
+  CC      mm/page-writeback.o
+  CC      kernel/extable.o
+  CC      arch/arm64/kernel/topology.o
+  CC      fs/char_dev.o
+  AS      arch/arm64/kernel/smccc-call.o
+  CC      arch/arm64/kernel/syscall.o
+  CC      kernel/params.o
+  CC      fs/stat.o
+  CC      arch/arm64/kernel/proton-pack.o
+  CC      mm/folio-compat.o
+  CC      kernel/kthread.o
+  CC      arch/arm64/kernel/idle.o
+  CC      fs/exec.o
+  CC      arch/arm64/kernel/patching.o
+  CC      mm/readahead.o
+  CC      kernel/sys_ni.o
+  CC      arch/arm64/kernel/pi/idreg-override.o
+  CC      kernel/nsproxy.o
+  CC      mm/swap.o
+  CC      arch/arm64/kernel/pi/map_kernel.o
+  CC      fs/pipe.o
+  CC      arch/arm64/kernel/pi/map_range.o
+  CC      kernel/notifier.o
+  CC      arch/arm64/kernel/pi/lib-fdt.o
+  CC      arch/arm64/kernel/pi/lib-fdt_ro.o
+  CC      mm/truncate.o
+  CC      arch/arm64/kernel/pi/relocate.o
+  CC      fs/namei.o
+  CC      kernel/ksysfs.o
+  CC      arch/arm64/kernel/pi/kaslr_early.o
+  HOSTCC  arch/arm64/kernel/pi/relacheck
+  OBJCOPY arch/arm64/kernel/pi/idreg-override.pi.o
+  OBJCOPY arch/arm64/kernel/pi/map_kernel.pi.o
+  OBJCOPY arch/arm64/kernel/pi/map_range.pi.o
+  OBJCOPY arch/arm64/kernel/pi/lib-fdt.pi.o
+  OBJCOPY arch/arm64/kernel/pi/lib-fdt_ro.pi.o
+  OBJCOPY arch/arm64/kernel/pi/relocate.pi.o
+  OBJCOPY arch/arm64/kernel/pi/kaslr_early.pi.o
+  AR      arch/arm64/kernel/pi/built-in.a
+  CC      arch/arm64/kernel/sys32.o
+  CC      kernel/cred.o
+  CC      mm/vmscan.o
+  CC      arch/arm64/kernel/signal32.o
+  CC      kernel/reboot.o
+  CC      arch/arm64/kernel/sys_compat.o
+  CC      fs/fcntl.o
+  AS      arch/arm64/kernel/sigreturn32.o
+  AS      arch/arm64/kernel/kuser32.o
+  CC      arch/arm64/kernel/ftrace.o
+  CC      kernel/async.o
+  AS      arch/arm64/kernel/entry-ftrace.o
+  CC      arch/arm64/kernel/module.o
+  CC      fs/ioctl.o
+  CC      kernel/range.o
+  CC      kernel/smpboot.o
+  CC      arch/arm64/kernel/module-plts.o
+  CC      kernel/ucount.o
+  CC      arch/arm64/kernel/perf_regs.o
+  CC      fs/readdir.o
+  CC      kernel/regset.o
+  CC      mm/shrinker.o
+  CC      kernel/ksyms_common.o
+  CC      arch/arm64/kernel/perf_callchain.o
+  CC      fs/select.o
+  CC      kernel/groups.o
+  CC      arch/arm64/kernel/hw_breakpoint.o
+  CC      mm/shmem.o
+  AS      arch/arm64/kernel/sleep.o
+  CC      arch/arm64/kernel/suspend.o
+  CC      kernel/vhost_task.o
+  CC      arch/arm64/kernel/jump_label.o
+  CC      kernel/sched/core.o
+  CC      fs/dcache.o
+  CC      arch/arm64/kernel/kgdb.o
+  CC      arch/arm64/kernel/efi.o
+  CC      mm/util.o
+  AS      arch/arm64/kernel/efi-rt-wrapper.o
+  CC      arch/arm64/kernel/pci.o
+  CC      fs/inode.o
+  CC      arch/arm64/kernel/armv8_deprecated.o
+  CC      mm/mmzone.o
+  CC      mm/vmstat.o
+  CC      arch/arm64/kernel/kaslr.o
+  CC      arch/arm64/kernel/elfcore.o
+  CC      arch/arm64/kernel/pointer_auth.o
+  CC      fs/attr.o
+  CC      arch/arm64/kernel/mte.o
+  CC      kernel/sched/fair.o
+  CC      mm/backing-dev.o
+  CC      fs/bad_inode.o
+  AS      arch/arm64/kernel/vdso-wrap.o
+  CC      arch/arm64/kernel/probes/kprobes.o
+  CC      fs/file.o
+  CC      arch/arm64/kernel/probes/decode-insn.o
+  CC      mm/mm_init.o
+  AS      arch/arm64/kernel/probes/kprobes_trampoline.o
+  CC      arch/arm64/kernel/probes/simulate-insn.o
+  AR      arch/arm64/kernel/probes/built-in.a
+  AS      arch/arm64/kernel/head.o
+  AR      arch/arm64/kernel/built-in.a
+  CC      fs/filesystems.o
+  CC      arch/arm64/kvm/hyp-constants.s
+  CC      mm/percpu.o
+  CC      fs/namespace.o
+  CC      arch/arm64/kvm/hyp/vhe/timer-sr.o
+  CC      kernel/sched/build_policy.o
+  CC      arch/arm64/kvm/hyp/vhe/sysreg-sr.o
+  CC      arch/arm64/kvm/hyp/vhe/debug-sr.o
+  CC      mm/slab_common.o
+  CC      arch/arm64/kvm/hyp/vhe/switch.o
+  CC      fs/seq_file.o
+  CC      mm/compaction.o
+  CC      kernel/sched/build_utility.o
+  CC      fs/xattr.o
+  CC      arch/arm64/kvm/hyp/vhe/tlb.o
+  CC      arch/arm64/kvm/hyp/vhe/../vgic-v3-sr.o
+  CC      fs/libfs.o
+  CC      arch/arm64/kvm/hyp/vhe/../aarch32.o
+  CC      mm/show_mem.o
+  CC      fs/fs-writeback.o
+  CC      arch/arm64/kvm/hyp/vhe/../vgic-v2-cpuif-proxy.o
+  CC      mm/interval_tree.o
+  AS      arch/arm64/kvm/hyp/vhe/../entry.o
+  AS      arch/arm64/kvm/hyp/vhe/../fpsimd.o
+  AS      arch/arm64/kvm/hyp/vhe/../hyp-entry.o
+  CC      arch/arm64/kvm/hyp/vhe/../exception.o
+  CC      mm/list_lru.o
+  AR      kernel/sched/built-in.a
+  CC      kernel/locking/mutex.o
+  AR      arch/arm64/kvm/hyp/vhe/built-in.a
+  LDS     arch/arm64/kvm/hyp/nvhe/hyp.lds
+  CC      arch/arm64/kvm/hyp/nvhe/timer-sr.nvhe.o
+  CC      mm/workingset.o
+  CC      fs/pnode.o
+  CC      arch/arm64/kvm/hyp/nvhe/sysreg-sr.nvhe.o
+  CC      kernel/locking/semaphore.o
+  CC      mm/debug.o
+  CC      fs/splice.o
+  CC      arch/arm64/kvm/hyp/nvhe/debug-sr.nvhe.o
+  CC      kernel/locking/rwsem.o
+  CC      mm/gup.o
+  CC      arch/arm64/kvm/hyp/nvhe/switch.nvhe.o
+  CC      kernel/locking/percpu-rwsem.o
+  CC      fs/sync.o
+  CC      kernel/locking/spinlock.o
+  CC      arch/arm64/kvm/hyp/nvhe/tlb.nvhe.o
+  CC      fs/utimes.o
+  CC      kernel/locking/osq_lock.o
+  CC      mm/mmap_lock.o
+  CC      kernel/locking/qspinlock.o
+  AS      arch/arm64/kvm/hyp/nvhe/hyp-init.nvhe.o
+  AS      arch/arm64/kvm/hyp/nvhe/host.nvhe.o
+  CC      arch/arm64/kvm/hyp/nvhe/hyp-main.nvhe.o
+  CC      fs/d_path.o
+  CC      kernel/locking/rtmutex_api.o
+  CC      mm/highmem.o
+  CC      arch/arm64/kvm/hyp/nvhe/hyp-smp.nvhe.o
+  CC      fs/stack.o
+  CC      mm/memory.o
+  CC      kernel/locking/qrwlock.o
+  CC      fs/fs_struct.o
+  CC      arch/arm64/kvm/hyp/nvhe/psci-relay.nvhe.o
+  AR      kernel/locking/built-in.a
+  CC      kernel/power/qos.o
+  CC      fs/statfs.o
+  CC      arch/arm64/kvm/hyp/nvhe/early_alloc.nvhe.o
+  CC      fs/fs_pin.o
+  CC      kernel/power/main.o
+  CC      arch/arm64/kvm/hyp/nvhe/page_alloc.nvhe.o
+  CC      fs/nsfs.o
+  CC      kernel/power/process.o
+  AS      arch/arm64/kvm/hyp/nvhe/cache.nvhe.o
+  CC      arch/arm64/kvm/hyp/nvhe/setup.nvhe.o
+  CC      mm/mincore.o
+  CC      fs/fs_types.o
+  CC      kernel/power/poweroff.o
+  CC      mm/mlock.o
+  CC      arch/arm64/kvm/hyp/nvhe/mm.nvhe.o
+  AR      kernel/power/built-in.a
+  CC      kernel/printk/printk.o
+  CC      fs/fs_context.o
+  CC      arch/arm64/kvm/hyp/nvhe/mem_protect.nvhe.o
+  CC      fs/fs_parser.o
+  CC      mm/mmap.o
+  CC      arch/arm64/kvm/hyp/nvhe/sys_regs.nvhe.o
+  CC      fs/fsopen.o
+  CC      kernel/printk/printk_safe.o
+  CC      arch/arm64/kvm/hyp/nvhe/pkvm.nvhe.o
+  CC      fs/init.o
+  CC      kernel/printk/nbcon.o
+  CC      mm/mmu_gather.o
+  CC      fs/kernel_read_file.o
+  CC      kernel/printk/printk_ringbuffer.o
+  CC      arch/arm64/kvm/hyp/nvhe/stacktrace.nvhe.o
+  CC      mm/mprotect.o
+  CC      kernel/printk/sysctl.o
+  CC      fs/mnt_idmapping.o
+  CC      arch/arm64/kvm/hyp/nvhe/ffa.nvhe.o
+  AR      kernel/printk/built-in.a
+  CC      kernel/irq/irqdesc.o
+  CC      mm/mremap.o
+  CC      fs/remap_range.o
+  CC      arch/arm64/kvm/hyp/nvhe/../vgic-v3-sr.nvhe.o
+  CC      kernel/irq/handle.o
+  CC      mm/msync.o
+  CC      fs/pidfs.o
+  CC      kernel/irq/manage.o
+  CC      arch/arm64/kvm/hyp/nvhe/../aarch32.nvhe.o
+  CC      mm/page_vma_mapped.o
+  CC      fs/buffer.o
+  CC      mm/pagewalk.o
+  CC      arch/arm64/kvm/hyp/nvhe/../vgic-v2-cpuif-proxy.nvhe.o
+  CC      kernel/irq/spurious.o
+  CC      mm/pgtable-generic.o
+  AS      arch/arm64/kvm/hyp/nvhe/../entry.nvhe.o
+  AS      arch/arm64/kvm/hyp/nvhe/../fpsimd.nvhe.o
+  AS      arch/arm64/kvm/hyp/nvhe/../hyp-entry.nvhe.o
+  CC      arch/arm64/kvm/hyp/nvhe/../exception.nvhe.o
+  CC      kernel/irq/resend.o
+  CC      mm/rmap.o
+  CC      arch/arm64/kvm/hyp/nvhe/../pgtable.nvhe.o
+  CC      kernel/irq/chip.o
+  CC      fs/mpage.o
+  AS      arch/arm64/kvm/hyp/nvhe/../../../lib/clear_page.nvhe.o
+  AS      arch/arm64/kvm/hyp/nvhe/../../../lib/copy_page.nvhe.o
+  AS      arch/arm64/kvm/hyp/nvhe/../../../lib/memcpy.nvhe.o
+  CC      kernel/irq/dummychip.o
+  CC      fs/proc_namespace.o
+  AS      arch/arm64/kvm/hyp/nvhe/../../../lib/memset.nvhe.o
+  HOSTCC  arch/arm64/kvm/hyp/nvhe/gen-hyprel
+  CC      mm/vmalloc.o
+  LD      arch/arm64/kvm/hyp/nvhe/kvm_nvhe.tmp.o
+  HYPREL  arch/arm64/kvm/hyp/nvhe/hyp-reloc.S
+  AS      arch/arm64/kvm/hyp/nvhe/hyp-reloc.o
+  LD      arch/arm64/kvm/hyp/nvhe/kvm_nvhe.rel.o
+  HYPCOPY arch/arm64/kvm/hyp/nvhe/kvm_nvhe.o
+  AR      arch/arm64/kvm/hyp/nvhe/built-in.a
+  CC      arch/arm64/kvm/hyp/pgtable.o
+  CC      fs/direct-io.o
+  CC      kernel/irq/devres.o
+  AR      arch/arm64/kvm/hyp/built-in.a
+  CC      arch/arm64/kvm/../../../virt/kvm/kvm_main.o
+  CC      kernel/irq/generic-chip.o
+  CC      fs/notify/fsnotify.o
+  CC      kernel/irq/autoprobe.o
+  CC      fs/notify/notification.o
+  CC      mm/vma.o
+  CC      kernel/irq/irqdomain.o
+  CC      fs/notify/group.o
+  CC      mm/process_vm_access.o
+  CC      kernel/irq/irq_sim.o
+  CC      fs/notify/mark.o
+  CC      mm/mseal.o
+  CC      arch/arm64/kvm/../../../virt/kvm/eventfd.o
+  CC      kernel/irq/proc.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/kernel/irq/proc.c:459:36: warning: no previous prototype for ‘rpi_get_interrupt_info’ [-Wmissing-prototypes]
+  459 | noinline void rpi_get_interrupt_info(struct irqaction* action_p) {
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/kernel/irq/proc.c: In function ‘rpi_get_interrupt_info’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/kernel/irq/proc.c:460:28: error: initialization of ‘unsigned int’ from ‘irq_handler_t’ {aka ‘enum irqreturn (*)(int,  void *)’} makes integer from pointer without a cast [-Wint-conversion]
+  460 |         unsigned irq_num = action_p->handler;
+      |                            ^~~~~~~~
+make[5]: *** [/project/kernel/Kernel-Analysis/linuxSrc/linux/scripts/Makefile.build:244: kernel/irq/proc.o] Error 1
+  CC      mm/page_alloc.o
+make[4]: *** [/project/kernel/Kernel-Analysis/linuxSrc/linux/scripts/Makefile.build:485: kernel/irq] Error 2
+make[3]: *** [/project/kernel/Kernel-Analysis/linuxSrc/linux/scripts/Makefile.build:485: kernel] Error 2
+  CC      fs/notify/fdinfo.o
+make[3]: *** Waiting for unfinished jobs....
+  CC      fs/notify/dnotify/dnotify.o
+  CC      arch/arm64/kvm/../../../virt/kvm/binary_stats.o
+  CC [M]  arch/arm64/crypto/sha1-ce-glue.o
+  AR      fs/notify/dnotify/built-in.a
+  CC      fs/notify/inotify/inotify_fsnotify.o
+  AS [M]  arch/arm64/crypto/sha1-ce-core.o
+  CC [M]  arch/arm64/crypto/sha2-ce-glue.o
+  CC      arch/arm64/kvm/../../../virt/kvm/vfio.o
+  CC      fs/notify/inotify/inotify_user.o
+  AS [M]  arch/arm64/crypto/sha2-ce-core.o
+  CC [M]  arch/arm64/crypto/sha512-ce-glue.o
+  CC      arch/arm64/kvm/../../../virt/kvm/coalesced_mmio.o
+  AR      fs/notify/inotify/built-in.a
+  CC      fs/notify/fanotify/fanotify.o
+  AS [M]  arch/arm64/crypto/sha512-ce-core.o
+  CC [M]  arch/arm64/crypto/sha3-ce-glue.o
+  CC      arch/arm64/kvm/../../../virt/kvm/irqchip.o
+  AS [M]  arch/arm64/crypto/sha3-ce-core.o
+  CC [M]  arch/arm64/crypto/sm3-ce-glue.o
+  CC      fs/notify/fanotify/fanotify_user.o
+  CC      mm/init-mm.o
+  AS [M]  arch/arm64/crypto/sm3-ce-core.o
+  CC [M]  arch/arm64/crypto/sm4-ce-cipher-glue.o
+  CC      arch/arm64/kvm/../../../virt/kvm/dirty_ring.o
+  AS [M]  arch/arm64/crypto/sm4-ce-cipher-core.o
+  CC [M]  arch/arm64/crypto/ghash-ce-glue.o
+  CC      mm/memblock.o
+  CC      arch/arm64/kvm/arm.o
+  AR      fs/notify/fanotify/built-in.a
+  AR      fs/notify/built-in.a
+  CC      fs/eventpoll.o
+  AS [M]  arch/arm64/crypto/ghash-ce-core.o
+  AS [M]  arch/arm64/crypto/aes-ce-core.o
+  CC [M]  arch/arm64/crypto/aes-ce-glue.o
+  CC [M]  arch/arm64/crypto/aes-ce-ccm-glue.o
+  CC      mm/slub.o
+  AS [M]  arch/arm64/crypto/aes-ce-ccm-core.o
+  CC [M]  arch/arm64/crypto/aes-glue-ce.o
+  CC      fs/anon_inodes.o
+  CC      fs/signalfd.o
+  AS [M]  arch/arm64/crypto/aes-ce.o
+  CC [M]  arch/arm64/crypto/aes-glue-neon.o
+  CC      arch/arm64/kvm/mmu.o
+  CC      fs/timerfd.o
+  AS [M]  arch/arm64/crypto/aes-neon.o
+  CC [M]  arch/arm64/crypto/sha256-glue.o
+  CC      arch/arm64/kvm/mmio.o
+  CC      fs/eventfd.o
+  CC      mm/madvise.o
+  AS [M]  arch/arm64/crypto/sha256-core.o
+  CC [M]  arch/arm64/crypto/sha512-glue.o
+  AS [M]  arch/arm64/crypto/sha512-core.o
+  AS [M]  arch/arm64/crypto/chacha-neon-core.o
+  CC [M]  arch/arm64/crypto/chacha-neon-glue.o
+  CC      arch/arm64/kvm/psci.o
+  CC      fs/aio.o
+  CC      mm/page_io.o
+  AS [M]  arch/arm64/crypto/poly1305-core.o
+  CC [M]  arch/arm64/crypto/poly1305-glue.o
+  CC      arch/arm64/kvm/hypercalls.o
+  AS [M]  arch/arm64/crypto/nh-neon-core.o
+  CC [M]  arch/arm64/crypto/nhpoly1305-neon-glue.o
+  CC      mm/swap_state.o
+  AS [M]  arch/arm64/crypto/aes-cipher-core.o
+  CC [M]  arch/arm64/crypto/aes-cipher-glue.o
+  CC      arch/arm64/kvm/pvtime.o
+  AS [M]  arch/arm64/crypto/aes-neonbs-core.o
+  CC      fs/crypto/crypto.o
+  CC [M]  arch/arm64/crypto/aes-neonbs-glue.o
+  CC      mm/swapfile.o
+  CC      arch/arm64/kvm/inject_fault.o
+  LD [M]  arch/arm64/crypto/sha1-ce.o
+  LD [M]  arch/arm64/crypto/sha2-ce.o
+  LD [M]  arch/arm64/crypto/sha512-ce.o
+  LD [M]  arch/arm64/crypto/sha3-ce.o
+  LD [M]  arch/arm64/crypto/sm3-ce.o
+  LD [M]  arch/arm64/crypto/sm4-ce-cipher.o
+  LD [M]  arch/arm64/crypto/ghash-ce.o
+  LD [M]  arch/arm64/crypto/aes-ce-cipher.o
+  LD [M]  arch/arm64/crypto/aes-ce-ccm.o
+  LD [M]  arch/arm64/crypto/aes-ce-blk.o
+  LD [M]  arch/arm64/crypto/aes-neon-blk.o
+  LD [M]  arch/arm64/crypto/sha256-arm64.o
+  LD [M]  arch/arm64/crypto/sha512-arm64.o
+  LD [M]  arch/arm64/crypto/chacha-neon.o
+  LD [M]  arch/arm64/crypto/poly1305-neon.o
+  LD [M]  arch/arm64/crypto/nhpoly1305-neon.o
+  LD [M]  arch/arm64/crypto/aes-arm64.o
+  LD [M]  arch/arm64/crypto/aes-neon-bs.o
+  CC      arch/arm64/kvm/va_layout.o
+  CC      fs/crypto/fname.o
+  CC      mm/swap_slots.o
+  CC      arch/arm64/kvm/handle_exit.o
+  CC      fs/crypto/hkdf.o
+  CC      mm/zswap.o
+  CC      fs/locks.o
+  CC      fs/crypto/hooks.o
+  CC      arch/arm64/kvm/guest.o
+  CC      fs/crypto/keyring.o
+  CC      mm/dmapool.o
+  CC      mm/mempolicy.o
+  CC      arch/arm64/kvm/debug.o
+  CC      fs/binfmt_script.o
+  CC      fs/crypto/keysetup.o
+  CC      mm/sparse.o
+  CC      arch/arm64/kvm/reset.o
+  CC      fs/crypto/keysetup_v1.o
+  CC      arch/arm64/kvm/sys_regs.o
+  CC      fs/crypto/policy.o
+  CC      mm/sparse-vmemmap.o
+  CC      mm/mmu_notifier.o
+  CC      arch/arm64/kvm/stacktrace.o
+  CC      mm/migrate.o
+  CC      fs/crypto/bio.o
+  CC      fs/binfmt_elf.o
+  AR      fs/crypto/built-in.a
+  CC      arch/arm64/kvm/vgic-sys-reg-v3.o
+  CC      mm/memory-tiers.o
+  CC      fs/compat_binfmt_elf.o
+  CC      arch/arm64/kvm/fpsimd.o
+  CC      arch/arm64/kvm/pkvm.o
+  CC      fs/backing-file.o
+  CC      mm/page_counter.o
+  CC      arch/arm64/kvm/arch_timer.o
+  CC      mm/memcontrol.o
+  CC      mm/vmpressure.o
+  CC      fs/mbcache.o
+  CC      arch/arm64/kvm/trng.o
+  CC      mm/swap_cgroup.o
+  CC      fs/posix_acl.o
+  CC      arch/arm64/kvm/vmid.o
+  CC      mm/page_isolation.o
+  CC      arch/arm64/kvm/emulate-nested.o
+  CC      fs/nfs_common/nfsacl.o
+  CC      mm/zpool.o
+  CC      fs/coredump.o
+  CC      fs/nfs_common/grace.o
+  CC      mm/zsmalloc.o
+  CC      arch/arm64/kvm/nested.o
+  CC      fs/nfs_common/nfs_ssc.o
+  CC      fs/nfs_common/common.o
+  CC      mm/early_ioremap.o
+  CC      arch/arm64/kvm/at.o
+  CC      fs/drop_caches.o
+  CC      mm/cma.o
+  AR      fs/nfs_common/built-in.a
+  CC      mm/numa.o
+  CC      fs/sysctls.o
+  CC      mm/numa_memblks.o
+  CC      fs/fhandle.o
+  CC      arch/arm64/kvm/vgic/vgic.o
+  CC      arch/arm64/kvm/vgic/vgic-init.o
+  CC      mm/numa_emulation.o
+  CC      fs/iomap/trace.o
+  CC      fs/quota/dquot.o
+  CC      arch/arm64/kvm/vgic/vgic-irqfd.o
+  CC      mm/secretmem.o
+  CC      fs/iomap/iter.o
+  CC      arch/arm64/kvm/vgic/vgic-v2.o
+  CC      mm/memfd.o
+  CC      fs/iomap/buffered-io.o
+  CC      arch/arm64/kvm/vgic/vgic-v3.o
+  CC      mm/ioremap.o
+  CC      fs/quota/quota.o
+  CC      mm/execmem.o
+  CC      arch/arm64/kvm/vgic/vgic-v4.o
+  AR      mm/built-in.a
+  CC      fs/quota/kqid.o
+  CC      fs/iomap/direct-io.o
+  CC      fs/proc/task_mmu.o
+  CC [M]  fs/quota/quota_v1.o
+  CC      arch/arm64/kvm/vgic/vgic-mmio.o
+  CC [M]  fs/quota/quota_v2.o
+  CC      fs/iomap/fiemap.o
+  CC [M]  fs/quota/quota_tree.o
+  CC      fs/proc/inode.o
+  CC      arch/arm64/kvm/vgic/vgic-mmio-v2.o
+  CC      fs/iomap/seek.o
+  CC      fs/proc/root.o
+  AR      fs/quota/built-in.a
+  CC      fs/proc/base.o
+  CC      arch/arm64/kvm/vgic/vgic-mmio-v3.o
+  CC      fs/iomap/swapfile.o
+  CC      fs/kernfs/mount.o
+  CC      arch/arm64/kvm/vgic/vgic-kvm-device.o
+  AR      fs/iomap/built-in.a
+  CC      fs/proc/generic.o
+  CC      fs/kernfs/inode.o
+  CC      arch/arm64/kvm/vgic/vgic-its.o
+  CC      fs/kernfs/dir.o
+  CC      fs/sysfs/file.o
+  CC      fs/proc/array.o
+  CC      fs/sysfs/dir.o
+  CC      fs/proc/fd.o
+  CC      arch/arm64/kvm/vgic/vgic-debug.o
+  CC      fs/kernfs/file.o
+  CC      fs/sysfs/symlink.o
+  CC      fs/proc/proc_tty.o
+  CC      arch/arm64/kvm/pmu-emul.o
+  CC      fs/kernfs/symlink.o
+  CC      fs/proc/cmdline.o
+  CC      fs/sysfs/mount.o
+  CC      fs/proc/consoles.o
+  AR      fs/kernfs/built-in.a
+  CC      fs/sysfs/group.o
+  CC      fs/proc/cpuinfo.o
+  CC      arch/arm64/kvm/pmu.o
+  CC      fs/configfs/inode.o
+  CC      fs/proc/devices.o
+  AR      fs/sysfs/built-in.a
+  CC      fs/devpts/inode.o
+  CC      fs/configfs/file.o
+  CC      arch/arm64/kvm/pauth.o
+  CC      fs/proc/interrupts.o
+  AR      fs/devpts/built-in.a
+  CC      fs/proc/loadavg.o
+  CC      fs/configfs/dir.o
+  CC      fs/ext4/balloc.o
+  CC      fs/proc/meminfo.o
+  AR      arch/arm64/kvm/built-in.a
+  AR      arch/arm64/built-in.a
+  CC      fs/proc/stat.o
+  CC      fs/ext4/bitmap.o
+  CC      fs/proc/uptime.o
+  CC      fs/configfs/symlink.o
+  CC      fs/proc/util.o
+  CC      fs/jbd2/transaction.o
+  CC      fs/ext4/block_validity.o
+  CC      fs/configfs/mount.o
+  CC      fs/proc/version.o
+  CC      fs/ext4/dir.o
+  CC      fs/configfs/item.o
+  CC      fs/proc/softirqs.o
+  CC      fs/proc/namespaces.o
+  AR      fs/configfs/built-in.a
+  CC      fs/jbd2/commit.o
+  CC      fs/proc/self.o
+  CC      fs/ext4/ext4_jbd2.o
+  CC      fs/proc/thread_self.o
+  CC      fs/ramfs/inode.o
+  CC      fs/proc/proc_sysctl.o
+  CC      fs/ext4/extents.o
+  CC      fs/ramfs/file-mmu.o
+  CC      fs/jbd2/recovery.o
+  AR      fs/ramfs/built-in.a
+  CC      fs/proc/proc_net.o
+  CC      fs/jbd2/checkpoint.o
+  CC      fs/ext4/extents_status.o
+  CC      fs/proc/kmsg.o
+  CC      fs/jbd2/revoke.o
+  CC      fs/proc/page.o
+  CC      fs/jbd2/journal.o
+  CC      fs/ext4/file.o
+  CC      fs/ext4/fsmap.o
+  AR      fs/proc/built-in.a
+  CC      fs/fat/cache.o
+  CC      fs/fat/dir.o
+  CC      fs/ext4/fsync.o
+  CC      fs/nfs/client.o
+  CC      fs/ext4/hash.o
+  AR      fs/jbd2/built-in.a
+  CC      fs/exportfs/expfs.o
+  CC      fs/fat/fatent.o
+  CC      fs/ext4/ialloc.o
+  CC      fs/nfs/dir.o
+  AR      fs/exportfs/built-in.a
+  CC      fs/lockd/clntlock.o
+  CC      fs/fat/file.o
+  CC      fs/ext4/indirect.o
+  CC      fs/lockd/clntproc.o
+  CC      fs/fat/inode.o
+  CC      fs/ext4/inline.o
+  CC      fs/nfs/file.o
+  CC      fs/lockd/clntxdr.o
+  CC      fs/fat/misc.o
+  CC      fs/ext4/inode.o
+  CC      fs/lockd/host.o
+  CC      fs/nfs/getroot.o
+  CC      fs/fat/nfs.o
+  CC      fs/lockd/svc.o
+  CC      fs/fat/namei_vfat.o
+  CC      fs/nfs/inode.o
+  CC      fs/fat/namei_msdos.o
+  CC      fs/lockd/svclock.o
+  CC      fs/ext4/ioctl.o
+  AR      fs/fat/built-in.a
+  CC      fs/nfs/super.o
+  CC      fs/lockd/svcshare.o
+  CC      fs/nfs/io.o
+  CC      fs/ext4/mballoc.o
+  CC      fs/lockd/svcproc.o
+  CC      fs/lockd/svcsubs.o
+  CC      fs/nfs/direct.o
+  CC      fs/nls/nls_base.o
+  CC      fs/lockd/mon.o
+  CC      fs/nls/nls_cp437.o
+  CC      fs/nls/nls_ascii.o
+  CC      fs/nfs/pagelist.o
+  CC      fs/lockd/trace.o
+  CC [M]  fs/nls/nls_cp737.o
+  CC [M]  fs/nls/nls_cp775.o
+  CC      fs/ext4/migrate.o
+  CC      fs/lockd/xdr.o
+  CC [M]  fs/nls/nls_cp850.o
+  CC [M]  fs/nls/nls_cp852.o
+  CC      fs/ext4/mmp.o
+  CC      fs/nfs/read.o
+  CC [M]  fs/nls/nls_cp855.o
+  CC      fs/lockd/clnt4xdr.o
+  CC [M]  fs/nls/nls_cp857.o
+  CC      fs/ext4/move_extent.o
+  CC [M]  fs/nls/nls_cp860.o
+  CC      fs/lockd/xdr4.o
+  CC [M]  fs/nls/nls_cp861.o
+  CC      fs/ext4/namei.o
+  CC      fs/nfs/symlink.o
+  CC [M]  fs/nls/nls_cp862.o
+  CC      fs/lockd/svc4proc.o
+  CC [M]  fs/nls/nls_cp863.o
+  CC [M]  fs/nls/nls_cp864.o
+  CC      fs/nfs/unlink.o
+  CC [M]  fs/nls/nls_cp865.o
+  CC      fs/lockd/procfs.o
+  CC [M]  fs/nls/nls_cp866.o
+  AR      fs/lockd/built-in.a
+  CC      fs/ext4/page-io.o
+  CC      fs/ext4/readpage.o
+  CC [M]  fs/nls/nls_cp869.o
+  CC      fs/nfs/write.o
+  CC [M]  fs/nls/nls_cp874.o
+  CC      fs/unicode/utf8-norm.o
+  CC [M]  fs/nls/nls_cp932.o
+  CC      fs/ext4/resize.o
+  CC      fs/unicode/utf8-core.o
+  CC [M]  fs/nls/nls_euc-jp.o
+  COPY    fs/unicode/utf8data.c
+  AR      fs/unicode/built-in.a
+  CC [M]  fs/unicode/utf8data.o
+  CC [M]  fs/nls/nls_cp936.o
+  CC      fs/nfs/namespace.o
+  CC      fs/ext4/super.o
+  CC [M]  fs/nls/nls_cp949.o
+  CC      fs/nfs/mount_clnt.o
+  CC [M]  fs/nls/nls_cp950.o
+  CC      fs/ext4/symlink.o
+  CC [M]  fs/nls/nls_cp1250.o
+  CC      fs/nfs/nfstrace.o
+  CC [M]  fs/nls/nls_cp1251.o
+  CC [M]  fs/nls/nls_iso8859-1.o
+  CC      fs/nfs/export.o
+  CC [M]  fs/nls/nls_iso8859-2.o
+  CC [M]  fs/nls/nls_iso8859-3.o
+  CC [M]  fs/nls/nls_iso8859-4.o
+  CC [M]  fs/nls/nls_iso8859-5.o
+  CC      fs/ext4/sysfs.o
+  CC [M]  fs/nls/nls_iso8859-6.o
+  CC [M]  fs/nls/nls_iso8859-7.o
+  CC      fs/ext4/xattr.o
+  CC [M]  fs/nls/nls_cp1255.o
+  CC [M]  fs/nls/nls_iso8859-9.o
+  CC      fs/nfs/sysfs.o
+  CC [M]  fs/nls/nls_iso8859-13.o
+  CC [M]  fs/nls/nls_iso8859-14.o
+  CC [M]  fs/nls/nls_iso8859-15.o
+  CC [M]  fs/nls/nls_koi8-r.o
+  CC      fs/nfs/fs_context.o
+  CC      fs/autofs/init.o
+  CC [M]  fs/nls/nls_koi8-u.o
+  CC      fs/ext4/xattr_hurd.o
+  CC [M]  fs/nls/nls_koi8-ru.o
+  CC      fs/autofs/inode.o
+  CC      fs/ext4/xattr_trusted.o
+  CC [M]  fs/nls/nls_utf8.o
+  CC [M]  fs/nls/nls_ucs2_utils.o
+  CC      fs/ext4/xattr_user.o
+  CC      fs/autofs/root.o
+  CC      fs/nfs/nfsroot.o
+  AR      fs/nls/built-in.a
+  CC      fs/ext4/fast_commit.o
+  CC      fs/debugfs/inode.o
+  CC      fs/autofs/symlink.o
+  CC      fs/nfs/sysctl.o
+  CC      fs/autofs/waitq.o
+  CC      fs/debugfs/file.o
+  CC      fs/ext4/orphan.o
+  CC      fs/nfs/nfs2super.o
+  CC      fs/autofs/expire.o
+  CC      fs/ext4/acl.o
+  CC      fs/nfs/proc.o
+  AR      fs/debugfs/built-in.a
+  CC      fs/autofs/dev-ioctl.o
+  CC      fs/ext4/xattr_security.o
+  CC      fs/tracefs/inode.o
+  CC      fs/ext4/crypto.o
+  AR      fs/autofs/built-in.a
+  CC      fs/f2fs/dir.o
+  CC      fs/nfs/nfs2xdr.o
+  CC      fs/tracefs/event_inode.o
+  AR      fs/ext4/built-in.a
+  CC      fs/pstore/inode.o
+  CC      fs/f2fs/file.o
+  CC      fs/nfs/nfs3super.o
+  AR      fs/tracefs/built-in.a
+  CC      fs/f2fs/inode.o
+  CC      fs/pstore/platform.o
+  CC      fs/nfs/nfs3client.o
+  CC      fs/pstore/ram.o
+  CC      fs/pstore/ram_core.o
+  CC      fs/nfs/nfs3proc.o
+  AR      fs/pstore/built-in.a
+  CC      fs/f2fs/namei.o
+  CC [M]  fs/binfmt_misc.o
+  CC      fs/f2fs/hash.o
+  CC      fs/nfs/nfs3xdr.o
+  CC      fs/f2fs/super.o
+  CC [M]  fs/dlm/ast.o
+  CC [M]  fs/netfs/buffered_read.o
+  CC [M]  fs/dlm/config.o
+  CC      fs/nfs/nfs3acl.o
+  CC [M]  fs/netfs/buffered_write.o
+  CC [M]  fs/dlm/dir.o
+  CC      fs/nfs/nfs4proc.o
+  CC [M]  fs/dlm/lock.o
+  CC [M]  fs/netfs/direct_read.o
+  CC [M]  fs/netfs/direct_write.o
+  CC      fs/f2fs/inline.o
+  CC [M]  fs/netfs/iterator.o
+  CC [M]  fs/dlm/lockspace.o
+  CC      fs/f2fs/checkpoint.o
+  CC [M]  fs/dlm/main.o
+  CC [M]  fs/netfs/locking.o
+  CC [M]  fs/netfs/main.o
+  CC      fs/nfs/nfs4xdr.o
+  CC      fs/f2fs/gc.o
+  CC [M]  fs/dlm/member.o
+  CC [M]  fs/dlm/memory.o
+  CC [M]  fs/netfs/misc.o
+  CC [M]  fs/dlm/midcomms.o
+  CC      fs/f2fs/data.o
+  CC [M]  fs/netfs/objects.o
+  CC [M]  fs/dlm/lowcomms.o
+  CC [M]  fs/netfs/read_collect.o
+  CC      fs/nfs/nfs4state.o
+  CC [M]  fs/netfs/read_pgpriv2.o
+  CC [M]  fs/dlm/plock.o
+  CC      fs/f2fs/node.o
+  CC [M]  fs/netfs/read_retry.o
+  CC [M]  fs/dlm/rcom.o
+  CC [M]  fs/netfs/write_collect.o
+  CC [M]  fs/dlm/recover.o
+  CC      fs/nfs/nfs4renewd.o
+  CC [M]  fs/dlm/recoverd.o
+  CC [M]  fs/netfs/write_issue.o
+  CC      fs/f2fs/segment.o
+  CC      fs/nfs/nfs4super.o
+  CC [M]  fs/dlm/requestqueue.o
+  CC      fs/nfs/nfs4file.o
+  CC [M]  fs/dlm/user.o
+  CC [M]  fs/netfs/stats.o
+  CC [M]  fs/dlm/util.o
+  CC      fs/nfs/delegation.o
+  CC [M]  fs/netfs/fscache_cache.o
+  LD [M]  fs/dlm/dlm.o
+  CC      fs/f2fs/recovery.o
+  CC [M]  fs/netfs/fscache_cookie.o
+  CC      fs/f2fs/shrinker.o
+  CC      fs/f2fs/extent_cache.o
+  CC      fs/nfs/nfs4idmap.o
+  CC [M]  fs/netfs/fscache_io.o
+  CC      fs/f2fs/sysfs.o
+  CC      fs/f2fs/debug.o
+  CC [M]  fs/netfs/fscache_main.o
+  CC      fs/nfs/callback.o
+  CC      fs/f2fs/xattr.o
+  CC [M]  fs/reiserfs/bitmap.o
+  CC [M]  fs/netfs/fscache_volume.o
+  CC      fs/nfs/callback_xdr.o
+  CC      fs/f2fs/acl.o
+  CC [M]  fs/reiserfs/do_balan.o
+  CC      fs/f2fs/iostat.o
+  CC [M]  fs/netfs/fscache_proc.o
+  CC      fs/nfs/callback_proc.o
+  CC [M]  fs/reiserfs/namei.o
+  CC [M]  fs/netfs/fscache_stats.o
+  AR      fs/f2fs/built-in.a
+  CC [M]  fs/reiserfs/inode.o
+  LD [M]  fs/netfs/netfs.o
+  CC [M]  fs/exfat/inode.o
+  CC [M]  fs/squashfs/block.o
+  CC      fs/nfs/nfs4namespace.o
+  CC [M]  fs/squashfs/cache.o
+  CC [M]  fs/exfat/namei.o
+  CC [M]  fs/reiserfs/file.o
+  CC      fs/nfs/nfs4getroot.o
+  CC [M]  fs/squashfs/dir.o
+  CC [M]  fs/reiserfs/dir.o
+  CC [M]  fs/exfat/dir.o
+  CC [M]  fs/squashfs/export.o
+  CC      fs/nfs/nfs4client.o
+  CC [M]  fs/squashfs/file.o
+  CC [M]  fs/reiserfs/fix_node.o
+  CC [M]  fs/exfat/super.o
+  CC [M]  fs/squashfs/fragment.o
+  CC [M]  fs/squashfs/id.o
+  CC [M]  fs/exfat/fatent.o
+  CC      fs/nfs/nfs4session.o
+  CC [M]  fs/reiserfs/super.o
+  CC [M]  fs/squashfs/inode.o
+  CC [M]  fs/exfat/cache.o
+  CC [M]  fs/squashfs/namei.o
+  CC [M]  fs/squashfs/super.o
+  CC [M]  fs/exfat/nls.o
+  CC      fs/nfs/dns_resolve.o
+  CC [M]  fs/reiserfs/prints.o
+  CC [M]  fs/squashfs/symlink.o
+  CC [M]  fs/exfat/misc.o
+  CC [M]  fs/reiserfs/objectid.o
+  CC      fs/nfs/nfs4trace.o
+  CC [M]  fs/squashfs/decompressor.o
+  CC [M]  fs/exfat/file.o
+  CC [M]  fs/reiserfs/lbalance.o
+  CC [M]  fs/squashfs/page_actor.o
+  CC [M]  fs/exfat/balloc.o
+  CC [M]  fs/squashfs/file_cache.o
+  CC [M]  fs/reiserfs/ibalance.o
+  CC [M]  fs/squashfs/decompressor_single.o
+  LD [M]  fs/exfat/exfat.o
+  CC [M]  fs/reiserfs/stree.o
+  CC [M]  fs/squashfs/xattr.o
+  CC [M]  fs/reiserfs/hashes.o
+  CC [M]  fs/squashfs/xattr_id.o
+  CC [M]  fs/isofs/namei.o
+  CC [M]  fs/squashfs/lzo_wrapper.o
+  CC [M]  fs/reiserfs/tail_conversion.o
+  CC [M]  fs/isofs/inode.o
+  CC [M]  fs/squashfs/xz_wrapper.o
+  CC [M]  fs/reiserfs/journal.o
+  CC      fs/nfs/nfs4sysctl.o
+  CC [M]  fs/squashfs/zlib_wrapper.o
+  CC [M]  fs/isofs/dir.o
+  CC [M]  fs/squashfs/zstd_wrapper.o
+  CC      fs/nfs/pnfs.o
+  CC [M]  fs/isofs/util.o
+  LD [M]  fs/squashfs/squashfs.o
+  CC [M]  fs/reiserfs/resize.o
+  CC [M]  fs/isofs/rock.o
+  CC [M]  fs/reiserfs/item_ops.o
+  CC [M]  fs/isofs/export.o
+  CC      fs/nfs/pnfs_dev.o
+  CC [M]  fs/reiserfs/ioctl.o
+  CC [M]  fs/isofs/joliet.o
+  CC [M]  fs/reiserfs/xattr.o
+  CC [M]  fs/isofs/compress.o
+  CC [M]  fs/reiserfs/lock.o
+  CC      fs/nfs/pnfs_nfs.o
+  LD [M]  fs/isofs/isofs.o
+  CC [M]  fs/reiserfs/xattr_user.o
+  CC [M]  fs/hfsplus/super.o
+  CC [M]  fs/hfs/bitmap.o
+  CC [M]  fs/reiserfs/xattr_trusted.o
+  CC [M]  fs/hfs/bfind.o
+  CC [M]  fs/hfsplus/options.o
+  CC [M]  fs/reiserfs/xattr_security.o
+  CC [M]  fs/hfs/bnode.o
+  CC [M]  fs/hfsplus/inode.o
+  CC      fs/nfs/nfs42proc.o
+  CC [M]  fs/reiserfs/xattr_acl.o
+  CC [M]  fs/hfs/brec.o
+  CC [M]  fs/hfsplus/ioctl.o
+  LD [M]  fs/reiserfs/reiserfs.o
+  CC [M]  fs/hfsplus/extents.o
+  CC [M]  fs/hfs/btree.o
+  CC [M]  fs/ecryptfs/dentry.o
+  CC [M]  fs/hfsplus/catalog.o
+  CC [M]  fs/ecryptfs/file.o
+  CC [M]  fs/hfs/catalog.o
+  CC      fs/nfs/nfs42xattr.o
+  CC [M]  fs/hfsplus/dir.o
+  CC [M]  fs/hfs/dir.o
+  CC [M]  fs/ecryptfs/inode.o
+  CC      fs/nfs/filelayout/filelayout.o
+  CC [M]  fs/hfs/extent.o
+  CC [M]  fs/hfsplus/btree.o
+  CC [M]  fs/ecryptfs/main.o
+  CC [M]  fs/hfsplus/bnode.o
+  CC [M]  fs/hfs/inode.o
+  CC [M]  fs/ecryptfs/super.o
+  CC      fs/nfs/filelayout/filelayoutdev.o
+  CC [M]  fs/hfs/attr.o
+  CC [M]  fs/hfsplus/brec.o
+  CC [M]  fs/ecryptfs/mmap.o
+  CC [M]  fs/hfs/mdb.o
+  CC [M]  fs/hfsplus/bfind.o
+  AR      fs/nfs/filelayout/built-in.a
+  CC      fs/nfs/flexfilelayout/flexfilelayout.o
+  CC [M]  fs/ecryptfs/read_write.o
+  CC [M]  fs/hfs/part_tbl.o
+  CC [M]  fs/hfsplus/tables.o
+  CC [M]  fs/ecryptfs/crypto.o
+  CC [M]  fs/hfs/string.o
+  CC [M]  fs/hfsplus/unicode.o
+  CC [M]  fs/hfs/super.o
+  CC [M]  fs/ecryptfs/keystore.o
+  CC      fs/nfs/flexfilelayout/flexfilelayoutdev.o
+  CC [M]  fs/hfsplus/wrapper.o
+  CC [M]  fs/hfs/sysdep.o
+  CC [M]  fs/hfsplus/bitmap.o
+  CC [M]  fs/ecryptfs/kthread.o
+  CC [M]  fs/hfs/trans.o
+  AR      fs/nfs/flexfilelayout/built-in.a
+  CC [M]  fs/nfs/blocklayout/blocklayout.o
+  CC [M]  fs/hfsplus/part_tbl.o
+  CC [M]  fs/ecryptfs/debug.o
+  LD [M]  fs/hfs/hfs.o
+  AR      fs/nfs/built-in.a
+  CC [M]  fs/hfsplus/attributes.o
+  CC [M]  fs/hfsplus/xattr.o
+  LD [M]  fs/ecryptfs/ecryptfs.o
+  CC [M]  fs/hfsplus/xattr_user.o
+  CC [M]  fs/nfs/blocklayout/dev.o
+  CC [M]  fs/nfsd/trace.o
+  CC [M]  fs/nfsd/nfssvc.o
+  CC [M]  fs/hfsplus/xattr_security.o
+  CC [M]  fs/hfsplus/xattr_trusted.o
+  CC [M]  fs/nfs/blocklayout/extent_tree.o
+  CC [M]  fs/nfsd/nfsctl.o
+  LD [M]  fs/hfsplus/hfsplus.o
+  CC [M]  fs/nfs/blocklayout/rpc_pipefs.o
+  CC [M]  fs/nfsd/nfsfh.o
+  LD [M]  fs/nfs/blocklayout/blocklayoutdriver.o
+  CC [M]  fs/nfsd/vfs.o
+  CC [M]  fs/nfsd/export.o
+  CC [M]  fs/smb/common/cifs_arc4.o
+  CC [M]  fs/smb/common/cifs_md4.o
+  CC [M]  fs/nfsd/auth.o
+  CC [M]  fs/nfsd/lockd.o
+  CC [M]  fs/smb/client/trace.o
+  CC [M]  fs/ntfs3/attrib.o
+  CC [M]  fs/nfsd/nfscache.o
+  CC [M]  fs/jffs2/compr.o
+  CC [M]  fs/jffs2/dir.o
+  CC [M]  fs/ntfs3/attrlist.o
+  CC [M]  fs/nfsd/stats.o
+  CC [M]  fs/jffs2/file.o
+  CC [M]  fs/ntfs3/bitfunc.o
+  CC [M]  fs/jffs2/ioctl.o
+  CC [M]  fs/nfsd/filecache.o
+  CC [M]  fs/smb/client/cifsfs.o
+  CC [M]  fs/ntfs3/bitmap.o
+  CC [M]  fs/jffs2/nodelist.o
+  CC [M]  fs/jffs2/malloc.o
+  CC [M]  fs/ntfs3/dir.o
+  CC [M]  fs/jffs2/read.o
+  CC [M]  fs/smb/client/cifs_debug.o
+  CC [M]  fs/nfsd/nfs3proc.o
+  CC [M]  fs/ntfs3/fsntfs.o
+  CC [M]  fs/jffs2/nodemgmt.o
+  CC [M]  fs/nfsd/nfs3xdr.o
+  CC [M]  fs/smb/client/connect.o
+  CC [M]  fs/jffs2/readinode.o
+  CC [M]  fs/ntfs3/frecord.o
+  CC [M]  fs/jffs2/write.o
+  CC [M]  fs/nfsd/netlink.o
+  CC [M]  fs/jffs2/scan.o
+  CC [M]  fs/nfsd/nfsproc.o
+  CC [M]  fs/ntfs3/file.o
+  CC [M]  fs/smb/client/dir.o
+  CC [M]  fs/jffs2/gc.o
+  CC [M]  fs/nfsd/nfsxdr.o
+  CC [M]  fs/ntfs3/fslog.o
+  CC [M]  fs/jffs2/symlink.o
+  CC [M]  fs/smb/client/file.o
+  CC [M]  fs/nfsd/nfs2acl.o
+  CC [M]  fs/jffs2/build.o
+  CC [M]  fs/jffs2/erase.o
+  CC [M]  fs/nfsd/nfs3acl.o
+  CC [M]  fs/ntfs3/inode.o
+  CC [M]  fs/jffs2/background.o
+  CC [M]  fs/nfsd/nfs4proc.o
+  CC [M]  fs/smb/client/inode.o
+  CC [M]  fs/jffs2/fs.o
+  CC [M]  fs/ntfs3/index.o
+  CC [M]  fs/jffs2/writev.o
+  CC [M]  fs/jffs2/super.o
+  CC [M]  fs/nfsd/nfs4xdr.o
+  CC [M]  fs/smb/client/link.o
+  CC [M]  fs/ntfs3/lznt.o
+  CC [M]  fs/jffs2/debug.o
+  CC [M]  fs/ntfs3/namei.o
+  CC [M]  fs/jffs2/wbuf.o
+  CC [M]  fs/smb/client/misc.o
+  CC [M]  fs/ntfs3/record.o
+  CC [M]  fs/jffs2/compr_rtime.o
+  CC [M]  fs/ntfs3/run.o
+  CC [M]  fs/nfsd/nfs4state.o
+  CC [M]  fs/jffs2/compr_zlib.o
+  CC [M]  fs/smb/client/netmisc.o
+  CC [M]  fs/jffs2/summary.o
+  CC [M]  fs/ntfs3/super.o
+  CC [M]  fs/smb/client/smbencrypt.o
+  LD [M]  fs/jffs2/jffs2.o
+  CC [M]  fs/ubifs/shrinker.o
+  CC [M]  fs/ntfs3/upcase.o
+  CC [M]  fs/ubifs/journal.o
+  CC [M]  fs/smb/client/transport.o
+  CC [M]  fs/ntfs3/xattr.o
+  CC [M]  fs/ubifs/file.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/transport.c: In function ‘SendReceiveBlockingLock’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/transport.c:1536:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1536 |                 cifs_tcon_dbg(VFS, "Invalid length, greater than maximum frame, %d\n",
+      |                                                                      ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/transport.c:26:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/transport.c:1536:1006: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1536 |                 cifs_tcon_dbg(VFS, "Invalid length, greater than maximum frame, %d\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/transport.c:1643:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1643 |                 cifs_tcon_dbg(VFS, "Bad MID state?\n");
+      |                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/transport.c:1643:895: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1643 |                 cifs_tcon_dbg(VFS, "Bad MID state?\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  LD [M]  fs/ntfs3/ntfs3.o
+  CC [M]  fs/smb/client/cached_dir.o
+  CC [M]  fs/nfsd/nfs4idmap.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cached_dir.c: In function ‘close_all_cached_dirs’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cached_dir.c:493:86: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  493 |                                 cifs_tcon_dbg(VFS, "Out of memory while dropping dentries\n");
+      |                                                                                      ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cached_dir.c:9:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cached_dir.c:493:981: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  493 |                                 cifs_tcon_dbg(VFS, "Out of memory while dropping dentries\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/smb/server/unicode.o
+  CC [M]  fs/ubifs/dir.o
+  CC [M]  fs/smb/client/cifs_unicode.o
+  CC [M]  fs/smb/server/auth.o
+  CC [M]  fs/nfsd/nfs4acl.o
+  CC [M]  fs/ubifs/super.o
+  CC [M]  fs/smb/client/nterr.o
+  CC [M]  fs/smb/client/cifsencrypt.o
+  CC [M]  fs/nfsd/nfs4callback.o
+  CC [M]  fs/smb/server/vfs.o
+  CC [M]  fs/ubifs/sb.o
+  CC [M]  fs/smb/client/readdir.o
+  CC [M]  fs/nfsd/nfs4recover.o
+  CC [M]  fs/smb/server/vfs_cache.o
+  CC [M]  fs/ubifs/io.o
+  CC [M]  fs/smb/client/ioctl.o
+  CC [M]  fs/ubifs/tnc.o
+  LD [M]  fs/nfsd/nfsd.o
+  CC [M]  fs/smb/client/sess.o
+  CC [M]  fs/smb/server/server.o
+  CC [M]  fs/fuse/dev.o
+  CC [M]  fs/smb/server/ndr.o
+  CC [M]  fs/ubifs/master.o
+  CC [M]  fs/smb/client/export.o
+  CC [M]  fs/smb/server/misc.o
+  CC [M]  fs/ubifs/scan.o
+  CC [M]  fs/smb/client/unc.o
+  CC [M]  fs/ubifs/replay.o
+  CC [M]  fs/smb/server/oplock.o
+  CC [M]  fs/fuse/dir.o
+  CC [M]  fs/smb/client/winucase.o
+  CC [M]  fs/smb/client/smb2ops.o
+  CC [M]  fs/ubifs/log.o
+  CC [M]  fs/fuse/file.o
+  CC [M]  fs/smb/server/connection.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c: In function ‘SMB3_request_interfaces’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:842:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  842 |                 cifs_tcon_dbg(VFS, "error %d on ioctl to get interface list\n", rc);
+      |                                                                      ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:19:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:842:980: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  842 |                 cifs_tcon_dbg(VFS, "error %d on ioctl to get interface list\n", rc);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c: In function ‘SMB2_request_res_key’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1544:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1544 |                 cifs_tcon_dbg(VFS, "refcpy ioctl error %d getting resume key\n", rc);
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1544:983: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1544 |                 cifs_tcon_dbg(VFS, "refcpy ioctl error %d getting resume key\n", rc);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1548:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1548 |                 cifs_tcon_dbg(VFS, "Invalid refcopy resume key length\n");
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1548:950: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1548 |                 cifs_tcon_dbg(VFS, "Invalid refcopy resume key length\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c: In function ‘smb2_ioctl_query_info’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1715:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1715 |                 cifs_tcon_dbg(VFS, "Invalid passthru query flags: 0x%x\n",
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1715:983: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1715 |                 cifs_tcon_dbg(VFS, "Invalid passthru query flags: 0x%x\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c: In function ‘smb2_copychunk_range’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1865:86: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1865 |                                 cifs_tcon_dbg(VFS, "Invalid cchunk response size\n");
+      |                                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1865:951: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1865 |                                 cifs_tcon_dbg(VFS, "Invalid cchunk response size\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1879:86: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1879 |                                 cifs_tcon_dbg(VFS, "Invalid copy chunk response\n");
+      |                                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1879:948: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1879 |                                 cifs_tcon_dbg(VFS, "Invalid copy chunk response\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1884:86: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1884 |                                 cifs_tcon_dbg(VFS, "Invalid num chunks written\n");
+      |                                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:1884:945: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1884 |                                 cifs_tcon_dbg(VFS, "Invalid num chunks written\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c: In function ‘smb2_get_dfs_refer’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:3054:78: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3054 |                         cifs_tcon_dbg(VFS, "%s: ioctl error: rc=%d\n", __func__, rc);
+      |                                                                              ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:3054:967: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3054 |                         cifs_tcon_dbg(VFS, "%s: ioctl error: rc=%d\n", __func__, rc);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:3063:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3063 |                 cifs_tcon_dbg(VFS, "parse error in %s rc=%d\n", __func__, rc);
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/ubifs/commit.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2ops.c:3063:962: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3063 |                 cifs_tcon_dbg(VFS, "parse error in %s rc=%d\n", __func__, rc);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/ubifs/gc.o
+  CC [M]  fs/smb/server/ksmbd_work.o
+  CC [M]  fs/fuse/inode.o
+  CC [M]  fs/ubifs/orphan.o
+  CC [M]  fs/smb/client/smb2maperror.o
+  CC [M]  fs/smb/server/crypto_ctx.o
+  CC [M]  fs/smb/server/mgmt/ksmbd_ida.o
+  CC [M]  fs/ubifs/budget.o
+  CC [M]  fs/smb/server/mgmt/user_config.o
+  CC [M]  fs/smb/client/smb2transport.o
+  CC [M]  fs/fuse/control.o
+  CC [M]  fs/ubifs/find.o
+  CC [M]  fs/smb/server/mgmt/share_config.o
+  CC [M]  fs/fuse/xattr.o
+  CC [M]  fs/smb/client/smb2misc.o
+  CC [M]  fs/ubifs/tnc_commit.o
+  CC [M]  fs/fuse/acl.o
+  CC [M]  fs/smb/server/mgmt/tree_connect.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c: In function ‘smb2_cancelled_close_fid’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:760:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  760 |                 cifs_tcon_dbg(VFS, "Close unmatched open for MID:%llu\n",
+      |                                                                      ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:11:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:760:999: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  760 |                 cifs_tcon_dbg(VFS, "Close unmatched open for MID:%llu\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:763:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  763 |                 cifs_tcon_dbg(VFS, "Close interrupted close\n");
+      |                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:763:921: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  763 |                 cifs_tcon_dbg(VFS, "Close interrupted close\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:768:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  768 |                 cifs_tcon_dbg(VFS, "Close cancelled mid failed rc:%d\n", rc);
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2misc.c:768:960: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+  768 |                 cifs_tcon_dbg(VFS, "Close cancelled mid failed rc:%d\n", rc);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/fuse/readdir.o
+  CC [M]  fs/ubifs/compress.o
+  CC [M]  fs/smb/client/smb2pdu.o
+  CC [M]  fs/smb/server/mgmt/user_session.o
+  CC [M]  fs/ubifs/lpt.o
+  CC [M]  fs/fuse/ioctl.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘smb3_validate_negotiate’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1323:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1323 |                 cifs_tcon_dbg(VFS, "Unexpected null user (anonymous) auth flag sent by server\n");
+      |                                                                      ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:28:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1323:1022: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1323 |                 cifs_tcon_dbg(VFS, "Unexpected null user (anonymous) auth flag sent by server\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1384:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1384 |                 cifs_tcon_dbg(VFS, "Server does not support validate negotiate\n");
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1384:977: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1384 |                 cifs_tcon_dbg(VFS, "Server does not support validate negotiate\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1388:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1388 |                 cifs_tcon_dbg(VFS, "validate protocol negotiate failed: %d\n",
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1388:977: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1388 |                 cifs_tcon_dbg(VFS, "validate protocol negotiate failed: %d\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1396:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1396 |                 cifs_tcon_dbg(VFS, "Invalid protocol negotiate response size: %d\n",
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1396:1007: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1396 |                 cifs_tcon_dbg(VFS, "Invalid protocol negotiate response size: %d\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1423:62: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1423 |         cifs_tcon_dbg(VFS, "protocol revalidation - security settings mismatch\n");
+      |                                                              ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:1423:993: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1423 |         cifs_tcon_dbg(VFS, "protocol revalidation - security settings mismatch\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘SMB2_tcon’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:2164:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 2164 |                 cifs_tcon_dbg(VFS, "DFS capability contradicts DFS flag\n");
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:2164:956: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 2164 |                 cifs_tcon_dbg(VFS, "DFS capability contradicts DFS flag\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:2168:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 2168 |                 cifs_tcon_dbg(VFS, "Encryption is requested but not supported\n");
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:2168:974: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 2168 |                 cifs_tcon_dbg(VFS, "Encryption is requested but not supported\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘SMB2_ioctl’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:3524:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3524 |                 cifs_tcon_dbg(VFS, "srv returned invalid ioctl length: %d\n", *plen);
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:3524:983: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3524 |                 cifs_tcon_dbg(VFS, "srv returned invalid ioctl length: %d\n", *plen);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:3531:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3531 |                 cifs_tcon_dbg(VFS, "Malformed ioctl resp: len %d offset %d\n", *plen,
+      |                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:3531:1103: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3531 |                 cifs_tcon_dbg(VFS, "Malformed ioctl resp: len %d offset %d\n", *plen,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘query_info’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:3890:86: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3890 |                                 cifs_tcon_dbg(VFS,
+      |                                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:3890:981: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 3890 |                                 cifs_tcon_dbg(VFS,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘smb2_readv_callback’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:4573:86: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 4573 |                                 cifs_tcon_dbg(VFS, "SMB signature verification returned error = %d\n",
+      |                                                                                      ^~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:4573:1017: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 4573 |                                 cifs_tcon_dbg(VFS, "SMB signature verification returned error = %d\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘SMB2_query_directory_init’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5383:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5383 |                 cifs_tcon_dbg(VFS, "info level %u isn't supported\n",
+      |                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5383:974: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5383 |                 cifs_tcon_dbg(VFS, "info level %u isn't supported\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c: In function ‘smb2_parse_query_directory’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5455:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5455 |                 cifs_tcon_dbg(VFS, "info level %u isn't supported\n",
+      |                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5455:1004: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5455 |                 cifs_tcon_dbg(VFS, "info level %u isn't supported\n",
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5464:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5464 |                 cifs_tcon_dbg(VFS, "bad info payload");
+      |                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5464:893: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5464 |                 cifs_tcon_dbg(VFS, "bad info payload");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5497:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5497 |                 cifs_tcon_dbg(VFS, "Invalid search buffer type\n");
+      |                                                                      ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb2pdu.c:5497:929: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 5497 |                 cifs_tcon_dbg(VFS, "Invalid search buffer type\n");
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/smb/server/smb_common.o
+  CC [M]  fs/fuse/iomode.o
+  CC [M]  fs/ubifs/lprops.o
+  CC [M]  fs/fuse/passthrough.o
+  CC [M]  fs/smb/server/transport_tcp.o
+  CC [M]  fs/ubifs/recovery.o
+  CC [M]  fs/fuse/cuse.o
+  CC [M]  fs/smb/client/smb2inode.o
+  LD [M]  fs/fuse/fuse.o
+  CC [M]  fs/smb/client/smb2file.o
+  CC [M]  fs/smb/server/transport_ipc.o
+  CC [M]  fs/ubifs/ioctl.o
+  CC [M]  fs/ubifs/lpt_commit.o
+  CC [M]  fs/smb/client/cifsacl.o
+  CC [M]  fs/smb/server/smbacl.o
+  CC [M]  fs/overlayfs/super.o
+  CC [M]  fs/smb/server/smb2pdu.o
+  CC [M]  fs/ubifs/tnc_misc.o
+  CC [M]  fs/overlayfs/namei.o
+  CC [M]  fs/smb/client/fs_context.o
+  CC [M]  fs/ubifs/debug.o
+  CC [M]  fs/overlayfs/util.o
+  CC [M]  fs/smb/client/dns_resolve.o
+  CC [M]  fs/overlayfs/inode.o
+  CC [M]  fs/ubifs/misc.o
+  CC [M]  fs/ubifs/sysfs.o
+  ASN.1   fs/smb/client/cifs_spnego_negtokeninit.asn1.[ch]
+  CC [M]  fs/smb/client/namespace.o
+  CC [M]  fs/overlayfs/file.o
+  CC [M]  fs/smb/server/smb2ops.o
+  CC [M]  fs/ubifs/crypto.o
+  CC [M]  fs/smb/client/reparse.o
+  CC [M]  fs/overlayfs/dir.o
+  CC [M]  fs/ubifs/xattr.o
+  CC [M]  fs/smb/server/smb2misc.o
+  CC [M]  fs/overlayfs/readdir.o
+  CC [M]  fs/smb/client/xattr.o
+  LD [M]  fs/ubifs/ubifs.o
+  ASN.1   fs/smb/server/ksmbd_spnego_negtokeninit.asn1.[ch]
+  CC [M]  fs/smb/client/cifs_spnego.o
+  ASN.1   fs/smb/server/ksmbd_spnego_negtokentarg.asn1.[ch]
+  CC [M]  fs/smb/server/ksmbd_spnego_negtokeninit.asn1.o
+  CC [M]  fs/smb/server/ksmbd_spnego_negtokentarg.asn1.o
+  CC [M]  fs/smb/server/asn1.o
+  CC [M]  fs/overlayfs/copy_up.o
+  CC [M]  fs/overlayfs/export.o
+  CC [M]  fs/smb/client/dfs_cache.o
+  LD [M]  fs/smb/server/ksmbd.o
+  CC [M]  fs/overlayfs/params.o
+  CC [M]  fs/smb/client/dfs.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/dfs_cache.c: In function ‘__refresh_tcon_referral’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/dfs_cache.c:1233:70: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1233 |                 cifs_tcon_dbg(FYI, "%s: mark for reconnect\n", __func__);
+      |                                                                      ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/dfs_cache.c:15:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/dfs_cache.c:1233:949: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1233 |                 cifs_tcon_dbg(FYI, "%s: mark for reconnect\n", __func__);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/overlayfs/xattrs.o
+  CC [M]  fs/smb/client/fscache.o
+  CC [M]  fs/udf/balloc.o
+  LD [M]  fs/overlayfs/overlay.o
+  CC [M]  fs/smb/client/smb1ops.o
+  CC [M]  fs/jfs/super.o
+  CC [M]  fs/udf/dir.o
+  CC [M]  fs/xfs/xfs_trace.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb1ops.c: In function ‘cifs_query_symlink’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb1ops.c:1193:62: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1193 |         cifs_tcon_dbg(FYI, "%s: path=%s\n", __func__, full_path);
+      |                                                              ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb1ops.c:11:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/smb1ops.c:1193:939: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 1193 |         cifs_tcon_dbg(FYI, "%s: path=%s\n", __func__, full_path);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/jfs/file.o
+  CC [M]  fs/udf/file.o
+  CC [M]  fs/smb/client/cifssmb.o
+  CC [M]  fs/jfs/inode.o
+  CC [M]  fs/udf/ialloc.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifssmb.c: In function ‘cifs_query_reparse_point’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifssmb.c:2759:62: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 2759 |         cifs_tcon_dbg(FYI, "%s: path=%s\n", __func__, full_path);
+      |                                                              ^~
+In file included from /project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifssmb.c:31:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifssmb.c:2759:939: warning: the comparison will always evaluate as ‘true’ for the address of ‘tree_name’ will never be NULL [-Waddress]
+ 2759 |         cifs_tcon_dbg(FYI, "%s: path=%s\n", __func__, full_path);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^ 
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/smb/client/cifsglob.h:1216:14: note: ‘tree_name’ declared here
+ 1216 |         char tree_name[MAX_TREE_SIZE + 1]; /* UNC name of resource in ASCII */
+      |              ^~~~~~~~~
+  CC [M]  fs/jfs/namei.o
+  CC [M]  fs/udf/inode.o
+  CC [M]  fs/jfs/jfs_mount.o
+  CC [M]  fs/smb/client/cifs_spnego_negtokeninit.asn1.o
+  CC [M]  fs/smb/client/asn1.o
+  CC [M]  fs/udf/lowlevel.o
+  CC [M]  fs/jfs/jfs_umount.o
+  CC [M]  fs/udf/namei.o
+  CC [M]  fs/jfs/jfs_xtree.o
+  LD [M]  fs/smb/client/cifs.o
+  CC [M]  fs/9p/vfs_super.o
+  CC [M]  fs/udf/partition.o
+  CC [M]  fs/9p/vfs_inode.o
+  CC [M]  fs/jfs/jfs_imap.o
+  CC [M]  fs/udf/super.o
+  CC [M]  fs/9p/vfs_inode_dotl.o
+  CC [M]  fs/jfs/jfs_debug.o
+  CC [M]  fs/udf/truncate.o
+  CC [M]  fs/9p/vfs_addr.o
+  CC [M]  fs/jfs/jfs_dmap.o
+  CC [M]  fs/udf/symlink.o
+  CC [M]  fs/9p/vfs_file.o
+  CC [M]  fs/udf/directory.o
+  CC [M]  fs/9p/vfs_dir.o
+  CC [M]  fs/jfs/jfs_unicode.o
+  CC [M]  fs/jfs/jfs_dtree.o
+  CC [M]  fs/udf/misc.o
+  CC [M]  fs/9p/vfs_dentry.o
+  CC [M]  fs/udf/udftime.o
+  CC [M]  fs/9p/v9fs.o
+  CC [M]  fs/xfs/libxfs/xfs_ag.o
+  CC [M]  fs/udf/unicode.o
+  CC [M]  fs/9p/fid.o
+  CC [M]  fs/jfs/jfs_inode.o
+  LD [M]  fs/udf/udf.o
+  CC [M]  fs/jfs/jfs_discard.o
+  CC [M]  fs/9p/xattr.o
+  CC [M]  fs/nilfs2/inode.o
+  CC [M]  fs/jfs/jfs_extent.o
+  CC [M]  fs/xfs/libxfs/xfs_alloc.o
+  CC [M]  fs/9p/acl.o
+  CC [M]  fs/jfs/symlink.o
+  CC [M]  fs/nilfs2/file.o
+  CC [M]  fs/jfs/jfs_metapage.o
+  LD [M]  fs/9p/9p.o
+  CC [M]  fs/jfs/jfs_logmgr.o
+  CC [M]  fs/nilfs2/dir.o
+  CC [M]  fs/cachefiles/cache.o
+  CC [M]  fs/jfs/jfs_txnmgr.o
+  CC [M]  fs/nilfs2/super.o
+  CC [M]  fs/xfs/libxfs/xfs_alloc_btree.o
+  CC [M]  fs/cachefiles/daemon.o
+  CC [M]  fs/nilfs2/namei.o
+  CC [M]  fs/jfs/resize.o
+  CC [M]  fs/cachefiles/interface.o
+  CC [M]  fs/xfs/libxfs/xfs_attr.o
+  CC [M]  fs/nilfs2/page.o
+  CC [M]  fs/jfs/xattr.o
+  CC [M]  fs/cachefiles/io.o
+  CC [M]  fs/nilfs2/mdt.o
+  CC [M]  fs/jfs/ioctl.o
+  CC [M]  fs/xfs/libxfs/xfs_attr_leaf.o
+  CC [M]  fs/cachefiles/key.o
+  CC [M]  fs/jfs/acl.o
+  CC [M]  fs/nilfs2/btnode.o
+  LD [M]  fs/jfs/jfs.o
+  CC [M]  fs/cachefiles/main.o
+  CC [M]  fs/nilfs2/bmap.o
+  CC [M]  fs/cachefiles/namei.o
+  CC [M]  fs/nilfs2/btree.o
+  CC [M]  fs/ocfs2/alloc.o
+  CC [M]  fs/xfs/libxfs/xfs_attr_remote.o
+  CC [M]  fs/cachefiles/security.o
+  CC [M]  fs/cachefiles/volume.o
+  CC [M]  fs/nilfs2/direct.o
+  CC [M]  fs/cachefiles/xattr.o
+  CC [M]  fs/xfs/libxfs/xfs_bit.o
+  CC [M]  fs/nilfs2/dat.o
+  CC [M]  fs/xfs/libxfs/xfs_bmap.o
+  CC [M]  fs/nilfs2/recovery.o
+  LD [M]  fs/cachefiles/cachefiles.o
+  CC [M]  fs/nilfs2/the_nilfs.o
+  CC [M]  fs/nilfs2/segbuf.o
+  CC [M]  fs/nilfs2/segment.o
+  CC [M]  fs/nilfs2/cpfile.o
+  CC [M]  fs/ocfs2/aops.o
+  CC [M]  fs/nilfs2/sufile.o
+  CC [M]  fs/xfs/libxfs/xfs_bmap_btree.o
+  CC [M]  fs/btrfs/super.o
+  CC [M]  fs/nilfs2/ifile.o
+  CC [M]  fs/ocfs2/blockcheck.o
+  CC [M]  fs/nilfs2/alloc.o
+  CC [M]  fs/xfs/libxfs/xfs_btree.o
+  CC [M]  fs/ocfs2/buffer_head_io.o
+  CC [M]  fs/nilfs2/gcinode.o
+  CC [M]  fs/ocfs2/dcache.o
+  CC [M]  fs/nilfs2/ioctl.o
+  CC [M]  fs/nilfs2/sysfs.o
+  CC [M]  fs/ocfs2/dir.o
+  CC [M]  fs/xfs/libxfs/xfs_btree_staging.o
+  CC [M]  fs/btrfs/ctree.o
+  LD [M]  fs/nilfs2/nilfs2.o
+  CC [M]  fs/btrfs/extent-tree.o
+  CC [M]  fs/xfs/libxfs/xfs_da_btree.o
+  CC [M]  fs/ocfs2/dlmglue.o
+  CC [M]  fs/btrfs/print-tree.o
+  CC [M]  fs/gfs2/acl.o
+  CC [M]  fs/btrfs/root-tree.o
+  CC [M]  fs/xfs/libxfs/xfs_defer.o
+  CC [M]  fs/gfs2/bmap.o
+  CC [M]  fs/ocfs2/export.o
+  CC [M]  fs/btrfs/dir-item.o
+  CC [M]  fs/ocfs2/extent_map.o
+  CC [M]  fs/btrfs/file-item.o
+  CC [M]  fs/xfs/libxfs/xfs_dir2.o
+  CC [M]  fs/gfs2/dir.o
+  CC [M]  fs/btrfs/inode-item.o
+  CC [M]  fs/ocfs2/file.o
+  CC [M]  fs/gfs2/xattr.o
+  CC [M]  fs/xfs/libxfs/xfs_dir2_block.o
+  CC [M]  fs/btrfs/disk-io.o
+  CC [M]  fs/gfs2/glock.o
+  CC [M]  fs/xfs/libxfs/xfs_dir2_data.o
+  CC [M]  fs/ocfs2/heartbeat.o
+  CC [M]  fs/xfs/libxfs/xfs_dir2_leaf.o
+  CC [M]  fs/ocfs2/inode.o
+  CC [M]  fs/btrfs/transaction.o
+  CC [M]  fs/gfs2/glops.o
+  CC [M]  fs/ocfs2/ioctl.o
+  CC [M]  fs/btrfs/inode.o
+  CC [M]  fs/xfs/libxfs/xfs_dir2_node.o
+  CC [M]  fs/gfs2/log.o
+  CC [M]  fs/ocfs2/journal.o
+  CC [M]  fs/gfs2/lops.o
+  CC [M]  fs/xfs/libxfs/xfs_dir2_sf.o
+  CC [M]  fs/gfs2/main.o
+  CC [M]  fs/ocfs2/localalloc.o
+  CC [M]  fs/gfs2/meta_io.o
+  CC [M]  fs/xfs/libxfs/xfs_dquot_buf.o
+  CC [M]  fs/btrfs/file.o
+  CC [M]  fs/gfs2/aops.o
+  CC [M]  fs/ocfs2/locks.o
+  CC [M]  fs/xfs/libxfs/xfs_exchmaps.o
+  CC [M]  fs/gfs2/dentry.o
+  CC [M]  fs/ocfs2/mmap.o
+  CC [M]  fs/gfs2/export.o
+  CC [M]  fs/btrfs/defrag.o
+  CC [M]  fs/ocfs2/namei.o
+  CC [M]  fs/gfs2/file.o
+  CC [M]  fs/xfs/libxfs/xfs_ialloc.o
+  CC [M]  fs/btrfs/extent_map.o
+  CC [M]  fs/gfs2/ops_fstype.o
+  CC [M]  fs/btrfs/sysfs.o
+  CC [M]  fs/xfs/libxfs/xfs_ialloc_btree.o
+  CC [M]  fs/gfs2/inode.o
+  CC [M]  fs/ocfs2/refcounttree.o
+  CC [M]  fs/btrfs/accessors.o
+  CC [M]  fs/gfs2/quota.o
+  CC [M]  fs/xfs/libxfs/xfs_iext_tree.o
+  CC [M]  fs/btrfs/xattr.o
+  CC [M]  fs/gfs2/recovery.o
+  CC [M]  fs/xfs/libxfs/xfs_inode_fork.o
+  CC [M]  fs/btrfs/ordered-data.o
+  CC [M]  fs/ocfs2/reservations.o
+  CC [M]  fs/gfs2/rgrp.o
+  CC [M]  fs/btrfs/extent_io.o
+  CC [M]  fs/xfs/libxfs/xfs_inode_buf.o
+  CC [M]  fs/ocfs2/move_extents.o
+  CC [M]  fs/gfs2/super.o
+  CC [M]  fs/xfs/libxfs/xfs_inode_util.o
+  CC [M]  fs/ocfs2/resize.o
+  CC [M]  fs/gfs2/sys.o
+  CC [M]  fs/ocfs2/slot_map.o
+  CC [M]  fs/btrfs/volumes.o
+  CC [M]  fs/xfs/libxfs/xfs_log_rlimit.o
+  CC [M]  fs/gfs2/trans.o
+  CC [M]  fs/ocfs2/suballoc.o
+  CC [M]  fs/gfs2/util.o
+  CC [M]  fs/xfs/libxfs/xfs_ag_resv.o
+  LD [M]  fs/gfs2/gfs2.o
+  CC [M]  fs/btrfs/async-thread.o
+  CC [M]  fs/btrfs/ioctl.o
+  CC [M]  fs/xfs/libxfs/xfs_parent.o
+  CC [M]  fs/btrfs/locking.o
+  CC [M]  fs/ocfs2/super.o
+  CC [M]  fs/ocfs2/symlink.o
+  CC [M]  fs/xfs/libxfs/xfs_rmap.o
+  CC [M]  fs/ocfs2/sysfile.o
+  CC [M]  fs/ocfs2/uptodate.o
+  CC [M]  fs/btrfs/orphan.o
+  CC [M]  fs/btrfs/export.o
+  CC [M]  fs/ocfs2/quota_local.o
+  CC [M]  fs/xfs/libxfs/xfs_rmap_btree.o
+  CC [M]  fs/btrfs/tree-log.o
+  CC [M]  fs/xfs/libxfs/xfs_refcount.o
+  CC [M]  fs/bcachefs/acl.o
+  CC [M]  fs/btrfs/free-space-cache.o
+  CC [M]  fs/bcachefs/alloc_background.o
+  CC [M]  fs/xfs/libxfs/xfs_refcount_btree.o
+  CC [M]  fs/ocfs2/quota_global.o
+  CC [M]  fs/xfs/libxfs/xfs_sb.o
+  CC [M]  fs/btrfs/zlib.o
+  CC [M]  fs/ocfs2/xattr.o
+  CC [M]  fs/bcachefs/alloc_foreground.o
+  CC [M]  fs/btrfs/lzo.o
+  CC [M]  fs/xfs/libxfs/xfs_symlink_remote.o
+  CC [M]  fs/xfs/libxfs/xfs_trans_inode.o
+  CC [M]  fs/btrfs/zstd.o
+  CC [M]  fs/xfs/libxfs/xfs_trans_resv.o
+  CC [M]  fs/bcachefs/backpointers.o
+  CC [M]  fs/btrfs/compression.o
+  CC [M]  fs/xfs/libxfs/xfs_trans_space.o
+  CC [M]  fs/btrfs/delayed-ref.o
+  CC [M]  fs/ocfs2/acl.o
+  CC [M]  fs/xfs/libxfs/xfs_types.o
+  CC [M]  fs/bcachefs/bkey.o
+  CC [M]  fs/ocfs2/filecheck.o
+  CC [M]  fs/xfs/libxfs/xfs_rtbitmap.o
+  CC [M]  fs/btrfs/relocation.o
+  CC [M]  fs/ocfs2/stackglue.o
+  CC [M]  fs/bcachefs/bkey_methods.o
+  CC [M]  fs/xfs/xfs_aops.o
+  CC [M]  fs/ocfs2/stack_o2cb.o
+  CC [M]  fs/bcachefs/bkey_sort.o
+  CC [M]  fs/btrfs/delayed-inode.o
+  CC [M]  fs/xfs/xfs_attr_inactive.o
+  CC [M]  fs/ocfs2/stack_user.o
+  CC [M]  fs/bcachefs/bset.o
+  CC [M]  fs/ocfs2/dlmfs/userdlm.o
+  CC [M]  fs/xfs/xfs_attr_list.o
+  CC [M]  fs/ocfs2/dlmfs/dlmfs.o
+  CC [M]  fs/btrfs/scrub.o
+  LD [M]  fs/ocfs2/dlmfs/ocfs2_dlmfs.o
+  CC [M]  fs/ocfs2/cluster/heartbeat.o
+  CC [M]  fs/bcachefs/btree_cache.o
+  CC [M]  fs/xfs/xfs_bmap_util.o
+  CC [M]  fs/btrfs/backref.o
+  CC [M]  fs/bcachefs/btree_gc.o
+  CC [M]  fs/ocfs2/cluster/masklog.o
+  CC [M]  fs/xfs/xfs_bio_io.o
+  CC [M]  fs/ocfs2/cluster/sys.o
+  CC [M]  fs/xfs/xfs_buf.o
+  CC [M]  fs/ocfs2/cluster/nodemanager.o
+  CC [M]  fs/btrfs/ulist.o
+  CC [M]  fs/btrfs/qgroup.o
+  CC [M]  fs/bcachefs/btree_io.o
+  CC [M]  fs/ocfs2/cluster/quorum.o
+  CC [M]  fs/ocfs2/cluster/tcp.o
+  CC [M]  fs/xfs/xfs_dahash_test.o
+  CC [M]  fs/xfs/xfs_dir2_readdir.o
+  CC [M]  fs/btrfs/send.o
+  CC [M]  fs/bcachefs/btree_iter.o
+  CC [M]  fs/xfs/xfs_discard.o
+  CC [M]  fs/ocfs2/cluster/netdebug.o
+  LD [M]  fs/ocfs2/cluster/ocfs2_nodemanager.o
+  CC [M]  fs/ocfs2/dlm/dlmdomain.o
+  CC [M]  fs/xfs/xfs_error.o
+  CC [M]  fs/btrfs/dev-replace.o
+  CC [M]  fs/bcachefs/btree_journal_iter.o
+  CC [M]  fs/xfs/xfs_exchrange.o
+  CC [M]  fs/btrfs/raid56.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/btree_journal_iter.c: In function ‘bch2_journal_keys_put’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/btree_journal_iter.c:516:52: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  516 |         move_gap(keys, keys->nr);
+      |                                                    ^
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/btree_journal_iter.c: In function ‘bch2_shoot_down_journal_keys’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/btree_journal_iter.c:608:52: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  608 |         move_gap(keys, keys->nr);
+      |                                                    ^
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/btree_journal_iter.c: In function ‘bch2_journal_keys_dump’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/btree_journal_iter.c:627:52: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  627 |         move_gap(keys, keys->nr);
+      |                                                    ^
+  CC [M]  fs/ocfs2/dlm/dlmdebug.o
+  CC [M]  fs/bcachefs/btree_key_cache.o
+  CC [M]  fs/xfs/xfs_export.o
+  CC [M]  fs/ocfs2/dlm/dlmthread.o
+  CC [M]  fs/btrfs/uuid-tree.o
+  CC [M]  fs/xfs/xfs_extent_busy.o
+  CC [M]  fs/bcachefs/btree_locking.o
+  CC [M]  fs/btrfs/props.o
+  CC [M]  fs/ocfs2/dlm/dlmrecovery.o
+  CC [M]  fs/xfs/xfs_file.o
+  CC [M]  fs/bcachefs/btree_node_scan.o
+  CC [M]  fs/btrfs/free-space-tree.o
+  CC [M]  fs/ocfs2/dlm/dlmmaster.o
+  CC [M]  fs/bcachefs/btree_trans_commit.o
+  CC [M]  fs/btrfs/tree-checker.o
+  CC [M]  fs/xfs/xfs_filestream.o
+  CC [M]  fs/btrfs/space-info.o
+  CC [M]  fs/bcachefs/btree_update.o
+  CC [M]  fs/ocfs2/dlm/dlmast.o
+  CC [M]  fs/xfs/xfs_fsmap.o
+  CC [M]  fs/btrfs/block-rsv.o
+  CC [M]  fs/ocfs2/dlm/dlmconvert.o
+  CC [M]  fs/bcachefs/btree_update_interior.o
+  CC [M]  fs/xfs/xfs_fsops.o
+  CC [M]  fs/btrfs/delalloc-space.o
+  CC [M]  fs/ocfs2/dlm/dlmlock.o
+  CC [M]  fs/btrfs/block-group.o
+  CC [M]  fs/xfs/xfs_globals.o
+  CC [M]  fs/ocfs2/dlm/dlmunlock.o
+  CC [M]  fs/xfs/xfs_handle.o
+  CC [M]  fs/bcachefs/btree_write_buffer.o
+  LD [M]  fs/ocfs2/dlm/ocfs2_dlm.o
+  LD [M]  fs/ocfs2/ocfs2.o
+  LD [M]  fs/ocfs2/ocfs2_stackglue.o
+  LD [M]  fs/ocfs2/ocfs2_stack_o2cb.o
+  LD [M]  fs/ocfs2/ocfs2_stack_user.o
+  CC [M]  fs/bcachefs/buckets.o
+  CC [M]  fs/btrfs/discard.o
+  CC [M]  fs/xfs/xfs_health.o
+  CC [M]  fs/bcachefs/buckets_waiting_for_journal.o
+  CC [M]  fs/btrfs/reflink.o
+  CC [M]  fs/ceph/super.o
+  CC [M]  fs/bcachefs/chardev.o
+  CC [M]  fs/xfs/xfs_icache.o
+  CC [M]  fs/btrfs/subpage.o
+  CC [M]  fs/ceph/inode.o
+  CC [M]  fs/bcachefs/checksum.o
+  CC [M]  fs/btrfs/tree-mod-log.o
+  CC [M]  fs/xfs/xfs_ioctl.o
+  CC [M]  fs/btrfs/extent-io-tree.o
+  CC [M]  fs/bcachefs/clock.o
+  CC [M]  fs/ceph/dir.o
+  CC [M]  fs/bcachefs/compress.o
+  CC [M]  fs/btrfs/fs.o
+  CC [M]  fs/ceph/file.o
+  CC [M]  fs/xfs/xfs_iomap.o
+  CC [M]  fs/btrfs/messages.o
+  CC [M]  fs/bcachefs/darray.o
+  CC [M]  fs/bcachefs/data_update.o
+  CC [M]  fs/btrfs/bio.o
+  CC [M]  fs/xfs/xfs_iops.o
+  CC [M]  fs/ceph/locks.o
+  CC [M]  fs/btrfs/lru_cache.o
+  CC [M]  fs/ceph/addr.o
+  CC [M]  fs/btrfs/raid-stripe-tree.o
+  CC [M]  fs/bcachefs/debug.o
+  CC [M]  fs/xfs/xfs_inode.o
+  CC [M]  fs/btrfs/fiemap.o
+  CC [M]  fs/bcachefs/dirent.o
+  CC [M]  fs/ceph/ioctl.o
+  CC [M]  fs/btrfs/direct-io.o
+  CC [M]  fs/ceph/export.o
+  CC [M]  fs/bcachefs/disk_accounting.o
+  CC [M]  fs/xfs/xfs_itable.o
+  CC [M]  fs/btrfs/acl.o
+  CC [M]  fs/ceph/caps.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/disk_accounting.c: In function ‘bch2_accounting_read’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/disk_accounting.c:714:52: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  714 |         move_gap(keys, keys->nr);
+      |                                                    ^
+  CC [M]  fs/xfs/xfs_iwalk.o
+  LD [M]  fs/btrfs/btrfs.o
+  CC [M]  fs/efivarfs/inode.o
+  CC [M]  fs/efivarfs/file.o
+  CC [M]  fs/bcachefs/disk_groups.o
+  CC [M]  fs/efivarfs/super.o
+  CC [M]  fs/xfs/xfs_message.o
+  CC [M]  fs/ceph/snap.o
+  CC [M]  fs/bcachefs/ec.o
+  CC [M]  fs/efivarfs/vars.o
+  CC [M]  fs/xfs/xfs_mount.o
+  LD [M]  fs/efivarfs/efivarfs.o
+  CC [M]  fs/ceph/xattr.o
+  CC [M]  fs/xfs/xfs_mru_cache.o
+  CC [M]  fs/erofs/super.o
+  CC [M]  fs/xfs/xfs_pwork.o
+  CC [M]  fs/ceph/quota.o
+  CC [M]  fs/bcachefs/errcode.o
+  CC [M]  fs/ceph/io.o
+  CC [M]  fs/erofs/inode.o
+  CC [M]  fs/xfs/xfs_reflink.o
+  CC [M]  fs/bcachefs/error.o
+  CC [M]  fs/ceph/mds_client.o
+  CC [M]  fs/erofs/data.o
+  CC [M]  fs/bcachefs/extents.o
+  CC [M]  fs/erofs/namei.o
+  CC [M]  fs/xfs/xfs_stats.o
+  CC [M]  fs/erofs/dir.o
+  CC [M]  fs/xfs/xfs_super.o
+  CC [M]  fs/erofs/sysfs.o
+  CC [M]  fs/ceph/mdsmap.o
+  CC [M]  fs/erofs/xattr.o
+  CC [M]  fs/bcachefs/extent_update.o
+  CC [M]  fs/ceph/strings.o
+  CC [M]  fs/erofs/decompressor.o
+  CC [M]  fs/xfs/xfs_symlink.o
+  CC [M]  fs/ceph/ceph_frag.o
+  CC [M]  fs/bcachefs/eytzinger.o
+  CC [M]  fs/bcachefs/fs.o
+  CC [M]  fs/ceph/debugfs.o
+  CC [M]  fs/erofs/zmap.o
+  CC [M]  fs/ceph/util.o
+  CC [M]  fs/xfs/xfs_sysfs.o
+  CC [M]  fs/erofs/zdata.o
+  CC [M]  fs/ceph/metric.o
+  CC [M]  fs/xfs/xfs_trans.o
+  CC [M]  fs/bcachefs/fs-common.o
+  CC [M]  fs/erofs/zutil.o
+  CC [M]  fs/ceph/crypto.o
+  CC [M]  fs/erofs/decompressor_zstd.o
+  CC [M]  fs/bcachefs/fs-ioctl.o
+  LD [M]  fs/ceph/ceph.o
+  CC [M]  fs/bcachefs/fs-io.o
+  CC [M]  fs/xfs/xfs_xattr.o
+  CC [M]  fs/erofs/fileio.o
+  CC [M]  fs/xfs/xfs_log.o
+  AR      fs/built-in.a
+  CC [M]  fs/bcachefs/fs-io-buffered.o
+  LD [M]  fs/erofs/erofs.o
+  CC [M]  fs/xfs/xfs_log_cil.o
+  CC [M]  fs/bcachefs/fs-io-direct.o
+  CC [M]  fs/bcachefs/fs-io-pagecache.o
+  CC [M]  fs/xfs/xfs_bmap_item.o
+  CC [M]  fs/bcachefs/fsck.o
+  CC [M]  fs/xfs/xfs_buf_item.o
+  CC [M]  fs/bcachefs/inode.o
+  CC [M]  fs/bcachefs/io_read.o
+  CC [M]  fs/xfs/xfs_buf_item_recover.o
+  CC [M]  fs/bcachefs/io_misc.o
+  CC [M]  fs/xfs/xfs_dquot_item_recover.o
+  CC [M]  fs/xfs/xfs_exchmaps_item.o
+  CC [M]  fs/bcachefs/io_write.o
+  CC [M]  fs/xfs/xfs_extfree_item.o
+  CC [M]  fs/bcachefs/journal.o
+  CC [M]  fs/xfs/xfs_attr_item.o
+  CC [M]  fs/bcachefs/journal_io.o
+  CC [M]  fs/bcachefs/journal_reclaim.o
+  CC [M]  fs/xfs/xfs_icreate_item.o
+  CC [M]  fs/bcachefs/journal_sb.o
+  CC [M]  fs/bcachefs/journal_seq_blacklist.o
+  CC [M]  fs/xfs/xfs_inode_item.o
+  CC [M]  fs/xfs/xfs_inode_item_recover.o
+  CC [M]  fs/xfs/xfs_iunlink_item.o
+  CC [M]  fs/bcachefs/keylist.o
+  CC [M]  fs/bcachefs/logged_ops.o
+  CC [M]  fs/xfs/xfs_refcount_item.o
+  CC [M]  fs/xfs/xfs_rmap_item.o
+  CC [M]  fs/bcachefs/lru.o
+  CC [M]  fs/xfs/xfs_log_recover.o
+  CC [M]  fs/bcachefs/mean_and_variance.o
+  CC [M]  fs/bcachefs/migrate.o
+  CC [M]  fs/xfs/xfs_trans_ail.o
+  CC [M]  fs/bcachefs/move.o
+  CC [M]  fs/xfs/xfs_trans_buf.o
+  CC [M]  fs/xfs/xfs_dquot.o
+  CC [M]  fs/bcachefs/movinggc.o
+  CC [M]  fs/xfs/xfs_dquot_item.o
+  CC [M]  fs/xfs/xfs_trans_dquot.o
+  CC [M]  fs/bcachefs/nocow_locking.o
+  CC [M]  fs/xfs/xfs_qm_syscalls.o
+  CC [M]  fs/xfs/xfs_qm_bhv.o
+  CC [M]  fs/bcachefs/opts.o
+  CC [M]  fs/xfs/xfs_qm.o
+  CC [M]  fs/bcachefs/printbuf.o
+  CC [M]  fs/xfs/xfs_quotaops.o
+  CC [M]  fs/xfs/xfs_rtalloc.o
+  CC [M]  fs/bcachefs/quota.o
+  CC [M]  fs/bcachefs/rebalance.o
+  CC [M]  fs/xfs/xfs_acl.o
+  CC [M]  fs/xfs/xfs_sysctl.o
+  CC [M]  fs/xfs/xfs_ioctl32.o
+  CC [M]  fs/bcachefs/rcu_pending.o
+  CC [M]  fs/bcachefs/recovery.o
+  CC [M]  fs/bcachefs/recovery_passes.o
+  CC [M]  fs/bcachefs/reflink.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/recovery.c: In function ‘bch2_journal_replay’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/recovery.c:270:52: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  270 |         move_gap(keys, keys->nr);
+      |                                                    ^
+  LD [M]  fs/xfs/xfs.o
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/recovery_passes.c: In function ‘bch2_set_may_go_rw’:
+/project/kernel/Kernel-Analysis/linuxSrc/linux/fs/bcachefs/recovery_passes.c:45:52: warning: self-comparison always evaluates to false [-Wtautological-compare]
+   45 |         move_gap(keys, keys->nr);
+      |                                                    ^
+  CC [M]  fs/bcachefs/replicas.o
+  CC [M]  fs/bcachefs/sb-clean.o
+  CC [M]  fs/bcachefs/sb-counters.o
+  CC [M]  fs/bcachefs/sb-downgrade.o
+  CC [M]  fs/bcachefs/sb-errors.o
+  CC [M]  fs/bcachefs/sb-members.o
+  CC [M]  fs/bcachefs/siphash.o
+  CC [M]  fs/bcachefs/six.o
+  CC [M]  fs/bcachefs/snapshot.o
+  CC [M]  fs/bcachefs/subvolume.o
+  CC [M]  fs/bcachefs/super.o
+  CC [M]  fs/bcachefs/super-io.o
+  CC [M]  fs/bcachefs/sysfs.o
+  CC [M]  fs/bcachefs/tests.o
+  CC [M]  fs/bcachefs/time_stats.o
+  CC [M]  fs/bcachefs/thread_with_file.o
+  CC [M]  fs/bcachefs/trace.o
+  CC [M]  fs/bcachefs/two_state_shared_lock.o
+  CC [M]  fs/bcachefs/util.o
+  CC [M]  fs/bcachefs/varint.o
+  CC [M]  fs/bcachefs/xattr.o
+  LD [M]  fs/bcachefs/bcachefs.o
+make[2]: *** [/project/kernel/Kernel-Analysis/linuxSrc/linux/Makefile:1946: .] Error 2
+make[1]: *** [/project/kernel/Kernel-Analysis/linuxSrc/linux/Makefile:224: __sub-make] Error 2
+make[1]: Leaving directory '/project/kernel/Kernel-Analysis/linuxSrc/out'
+make: *** [Makefile:224: __sub-make] Error 2

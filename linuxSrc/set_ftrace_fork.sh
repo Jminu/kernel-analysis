@@ -8,7 +8,7 @@ echo 0 > /sys/kernel/debug/tracing/events/enable
 sleep 1
 echo "events disabled!"
 
-echo function > /sys/kernel/debug/tracing/current_tracer
+echo function_graph > /sys/kernel/debug/tracing/current_tracer
 sleep 1
 echo "function tracer enabled!"
 
@@ -19,9 +19,9 @@ echo "cpu_startup_entry enabled!"
 #####################################################################
 
 
-echo copy_thread > /sys/kernel/debug/tracing/set_ftrace_filter
+echo __arm64_sys_clone >> /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
-echo "copy_thread => enabled!"
+echo "__arm64_sys_fork => enabled!"
 
 
 #####################################################################
@@ -34,7 +34,7 @@ echo "copy_thread => enabled!"
 #sleep 1
 #echo "sched switch enabled!"
 
-echo 1 > /sys/kernel/debug/tracing/options/func_stack_trace
+echo 1 > /sys/kernel/debug/tracing/options/stacktrace
 echo "function stack trace enabled"
 
 echo 1 > /sys/kernel/debug/tracing/options/sym-offset

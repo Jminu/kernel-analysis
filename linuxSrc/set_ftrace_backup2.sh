@@ -18,7 +18,7 @@ echo "cpu_startup_entry enabled!"
 
 #####################################################################
 
-echo  bcm2835_mbox_irq > /sys/kernel/debug/tracing/set_ftrace_filter
+echo irq_enter irq_enter_rcu bcm2835_mbox_irq > /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
 echo "bcm2835_mbox_irq => ftrace enabled!"
 
